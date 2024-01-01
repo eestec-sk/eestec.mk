@@ -1,15 +1,12 @@
 version: "3"
 services:
   frontend:
-    container_name: eestecmk-nextjs
-    build:
-      context: ../frontend
-      dockerfile: Dockerfile
+    image: eesteclcskopje/lcskopje_private:eestecmk
     ports:
       - "6969:3000"
   
   backend:
-    container_name: eestecmk-strapi
+    image: eesteclcskopje/lcskopje_private:eestecmk-api
     environment:
       - HOST=0.0.0.0
       - PORT=1337
@@ -26,10 +23,6 @@ services:
       - DATABASE_PASSWORD=postgres
       - DATABASE_SSL=false
       - JWT_SECRET=VoykdCOSRXI9tUNFFR6plA==
-
-    build:
-      context: ../backend
-      dockerfile: Dockerfile
     ports:
       - "42069:1337"
     depends_on:
