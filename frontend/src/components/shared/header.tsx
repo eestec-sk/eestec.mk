@@ -20,12 +20,12 @@ const Header = () => {
       boxShadow="0 1px 3px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.06);"
     >
       <Image
-        width={308}
-        height={218}
+        width={293}
+        height={200}
           src="/images/Skopje.svg"
           alt="Skopje"
       />
-      <Flex width="33.33%" justifyContent="flex-start"  >
+      <Flex  justifyContent="flex-start"  >
         <IconButton
           icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
           size={"md"}
@@ -39,27 +39,27 @@ const Header = () => {
           target={"_blank"}
           rel={"noreferrer"}
         >
-          <FaFacebookF size={22} color="#E52A30" />
+          <FaFacebookF size={32} color="#E52A30" />
         </a>
         <a
           href="https://www.instagram.com/eesteclcskopje/"
           style={{
             marginTop: "auto",
             marginBottom: "auto",
-            marginLeft: "6px",
+            marginLeft: "1rem"
           }}
           target={"_blank"}
           rel={"noreferrer"}
         >
-          <FaInstagram size={22} color="#E52A30" />
+          <FaInstagram size={32} color="#E52A30" />
         </a>
         <a
           href="https://www.linkedin.com/company/eestec-lcskopje/"
-          style={{ marginTop: "auto", marginBottom: "auto", marginLeft: "8px" }}
+          style={{ marginTop: "auto", marginBottom: "auto", marginLeft: "1rem" }}
           target={"_blank"}
           rel={"noreferrer"}
         >
-          <FaLinkedinIn size={22} color="#E52A30" />
+          <FaLinkedinIn size={32} color="#E52A30" />
         </a>
       </Flex>
       <Flex width="33.33%" justifyContent="center">

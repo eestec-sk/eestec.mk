@@ -27,7 +27,7 @@ export const HeadingStyles: ComponentStyleConfig = {
       fontSize: "30px",
     },
     h3red: {
-      fontSize: "24px",
+      fontSize: "22px",
       color: "#e52a30",
     },
     h3white: {

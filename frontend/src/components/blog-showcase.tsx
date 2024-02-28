@@ -51,9 +51,10 @@ const BlogShowcase = () => {
               <Card padding="20px" h="60vh">
                 <VStack h="100%" spacing={5} align="stretch">
                   <Box
-                    paddingBottom="70%"
+                    paddingBottom="81%"
                     backgroundImage={`url(${blogShowcase.imageUrl})`}
                     backgroundSize={"cover"}
+                    border="3px solid #E52A30"
                   />
 
                   <Heading variant="h4" textTransform="uppercase">

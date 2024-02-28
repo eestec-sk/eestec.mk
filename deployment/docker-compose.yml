@@ -1,34 +1,41 @@
-version: '3.8'
-
+version: "3"
 services:
-
   frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
+    image: eesteclcskopje/lcskopje_private:eestecmk
     ports:
-      - "6969:6969"
-    depends_on:
-      - backend
-
+      - "6969:3000"
+  
   backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
-    ports:
-      - "42069:42069"
+    image: eesteclcskopje/lcskopje_private:eestecmk-api
     environment:
-      - DATABASE_HOST=db
+      - HOST=0.0.0.0
+      - PORT=1337
+      - APP_KEYS=1/Zd+Set34q2UOja4vEkDg==,mDNQFDqJiGJBNWDBx1GfPA==,U98PhuxIvLQ4zqslwK2IKg==,EukGMbtWczC9Qr5tEjazkg==
+      - API_TOKEN_SALT=6FasummRDPv+ALLfbPFtaA==
+      - ADMIN_JWT_SECRET=Uk783OqunAoy9rs56qSCLg==
+      - TRANSFER_TOKEN_SALT=iVmekpJUWp7Rr75jvkEs5A==
+      # Database
+      - DATABASE_CLIENT=postgres
+      - DATABASE_HOST=database
       - DATABASE_PORT=5432
       - DATABASE_NAME=eestecmk
-      - DATABASE_USERNAME=postgres
+      - DATABASE_USERNAME=strapi
       - DATABASE_PASSWORD=postgres
+      - DATABASE_SSL=false
+      - JWT_SECRET=VoykdCOSRXI9tUNFFR6plA==
+    ports:
+      - "42069:1337"
+    depends_on:
+      - database
 
   database:
     image: postgres
     environment:
-      POSTGRES_DB: eestecmk
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      - POSTGRES_DB=eestecmk
+      - POSTGRES_USER=strapi
+      - POSTGRES_PASSWORD=postgres
     volumes:
-      - ./data/db:/var/lib/postgresql/data
+      - eestec_db:/var/lib/postgresql/data
+
+volumes:
+  eestec_db:

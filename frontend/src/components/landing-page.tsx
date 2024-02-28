@@ -1,5 +1,6 @@
 import { Box, Text, Flex, Heading, HStack, Button, position } from "@chakra-ui/react";
 import Image from "next/image";
+import router from "next/router";
 const LandingPage = () => {
   const imageUrl = "/images/yearbook-photo.jpeg";
   const gradient = "rgba(229, 42, 48, 0) 41.09%, rgba(229, 42, 48, 1) 82.88%, rgba(229, 42, 48, 1) 100%";
@@ -39,7 +40,7 @@ const LandingPage = () => {
               />
               
               <Button
-                onClick={() => alert("Hold your horses. Feature coming soon!")}
+                onClick={() => router.replace("/register")}
                 alignSelf={"flex-end"}
                 width={"max-content"}
                 // mt="50px"
@@ -54,7 +55,7 @@ const LandingPage = () => {
             justifyContent={"center"} 
             color={"white"} 
             fontSize={"1.2rem"} 
-            // _hover={{fontSize: "1.5rem"}}
+            _hover={{fontSize: "1.3rem"}}
             >
                       Scroll for more! 
             </Flex>
