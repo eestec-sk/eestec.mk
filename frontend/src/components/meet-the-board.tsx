@@ -39,7 +39,7 @@ const MeetTheBoard = () => {
       id: 5,
       name: "Ivana Koceva",
       position: "IT Coordinator",
-      imageUrl: "/images/board/ivana.jpg",
+      imageUrl: "/images/board/ivana.jpeg",
     },
     {
       id: 6,
