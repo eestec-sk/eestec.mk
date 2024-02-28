@@ -1,5 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import { ReactElement } from "react";
+import EventsShowcase from "../components/events-showcase";
 import BlogShowcase from "../components/blog-showcase";
 import LandingPage from "../components/landing-page";
 import UnauthenticatedLayout from "../components/layout/unauthenticated-layout";
@@ -44,6 +45,8 @@ const Home = () => {
         <WhyYouShouldJoin />
 
         <MakingMemories />
+
+        <EventsShowcase />
 
         <BlogShowcase />
 
