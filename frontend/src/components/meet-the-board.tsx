@@ -12,9 +12,9 @@ const MeetTheBoard = () => {
   const boardMembers = [
     {
       id: 1,
-      name: "Hristijan Saveski",
+      name: "Vasilaki Tocili",
       position: "Chairperson",
-      imageUrl: "/images/board/hristijan.png",
+      imageUrl: "/images/board/vasilaki.png",
     },
     {
       id: 2,
@@ -27,18 +27,31 @@ const MeetTheBoard = () => {
       name: "Martina Klimoska",
       position: "Tresurer",
       imageUrl: "/images/board/martina.png",
+      test: "<br/>",
     },
     {
       id: 4,
-      name: "Kristina Srbinoska",
-      position: "FR Coordinator",
-      imageUrl: "/images/board/kristina.png",
+      name: "Marina Klimoska",
+      position: "PR Coordinator",
+      imageUrl: "/images/board/marina.jpeg",
     },
     {
       id: 5,
-      name: "Petar Hristovski",
+      name: "Ivana Koceva",
       position: "IT Coordinator",
-      imageUrl: "/images/board/petar.png",
+      imageUrl: "/images/board/ivana.jpg",
+    },
+    {
+      id: 6,
+      name: "Toni Hristovski",
+      position: "HR Coordinator",
+      imageUrl: "/images/board/toni.jpeg",
+    },
+    {
+      id: 7,
+      name: "Kristina Srbinoska",
+      position: "FR Coordinator",
+      imageUrl: "/images/board/kristina.png",
     },
   ];
 
@@ -47,7 +60,7 @@ const MeetTheBoard = () => {
       <Center>
         <Heading variant="h2">Board 2023/2024</Heading>
       </Center>
-      <HStack pt={"50px"}>
+      <HStack pt={"40px"}>
         {boardMembers.map((boardMember) => (
           <Stack key={boardMember.id} direction="column" w="full">
             <Center>
@@ -57,6 +70,7 @@ const MeetTheBoard = () => {
                 backgroundSize={"cover"}
                 color="white"
                 marginBottom="2"
+                marginRight="2"
                 border={"5px solid #e52a30"}
               ></Circle>
             </Center>
@@ -64,7 +78,7 @@ const MeetTheBoard = () => {
               <Heading variant="h3red">{boardMember.name}</Heading>
             </Center>
             <Center>
-              <Heading variant="h4">{boardMember.position}</Heading>
+              <Heading variant="h4">{boardMember.position}</Heading>             
             </Center>
           </Stack>
         ))}
