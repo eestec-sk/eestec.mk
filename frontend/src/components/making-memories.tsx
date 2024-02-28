@@ -22,7 +22,7 @@ const MakingMemories = () => {
               backgroundSize={"cover"}
               w="full"
               h="full"
-              border="5px solid #FFFFFF"
+              border="3px solid #E52A30"
               shadow="lg"
             />
           </GridItem>
