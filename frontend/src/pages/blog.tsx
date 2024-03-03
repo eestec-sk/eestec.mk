@@ -1,4 +1,4 @@
-import { Flex, Heading, Text, VStack } from "@chakra-ui/react";
+import { Box, Flex, Heading, Skeleton, SkeletonCircle, Text, VStack } from "@chakra-ui/react";
 import Header from "../components/shared/header";
 
 import { NextSeo } from 'next-seo';
@@ -30,6 +30,14 @@ const Blog = () => {
       >
         <VStack>
           <Heading variant="title">Blog coming soon!</Heading>
+          <Box padding='6' boxShadow='lg' width={"70rem"}>
+            <SkeletonCircle size='10' marginBottom={"1rem"}/>
+            <Skeleton height="1rem" marginBottom={"1rem"} borderRadius={"1rem"}></Skeleton>
+            <Skeleton height="1rem" marginBottom={"1rem"} borderRadius={"1rem"}></Skeleton>
+            <Skeleton height="1rem" marginBottom={"1rem"} borderRadius={"1rem"}></Skeleton>
+            <Skeleton height="1rem" marginBottom={"1rem"} borderRadius={"1rem"}></Skeleton>
+            <Skeleton height="1rem" marginBottom={"1rem"} borderRadius={"1rem"}></Skeleton>
+          </Box>
           <Text
             _hover={{ textDecoration: "underline" }}
             variant="white"
