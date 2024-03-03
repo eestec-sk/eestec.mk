@@ -45,14 +45,14 @@ const Footer = () => {
             height="350"
             loading="lazy" />
         </Box>
-        <IconButton
+      </HStack>
+      <IconButton
             padding="0.5rem"
             fontSize="2rem"
               aria-label='ToTop'
               icon={<ArrowUpIcon />}
               onClick={() => router.replace("/")}
             />
-      </HStack>
     </Flex>
   );
 };
