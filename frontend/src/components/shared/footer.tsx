@@ -5,8 +5,11 @@ import {
   Flex,
   Heading,
   HStack,
+  IconButton
 } from "@chakra-ui/react";
 import React from "react";
+import {  ArrowUpIcon } from '@chakra-ui/icons'
+import router from "next/router";
 
 const Footer = () => {
   return (
@@ -28,7 +31,6 @@ const Footer = () => {
           <Text variant="white" marginLeft={"-12rem"}>Rugjer Boshkovikj 1000 Skopje</Text>
           <Text variant="white" marginLeft={"-12rem"}>skopje.lc@gmail.com</Text>
         </Box>
-
         <Flex>
           <Image
             width={266}
@@ -43,6 +45,13 @@ const Footer = () => {
             height="350"
             loading="lazy" />
         </Box>
+        <IconButton
+            padding="0.5rem"
+            fontSize="2rem"
+              aria-label='ToTop'
+              icon={<ArrowUpIcon />}
+              onClick={() => router.replace("/")}
+            />
       </HStack>
     </Flex>
   );
