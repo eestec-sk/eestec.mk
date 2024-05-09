@@ -1,4 +1,5 @@
-import { Box, Grid, Heading, VStack, GridItem } from "@chakra-ui/react";
+import { Box, Grid, Heading, VStack, GridItem, Button } from "@chakra-ui/react";
+import router from "next/router";
 
 const MakingMemories = () => {
   const memoryData = [
@@ -26,8 +27,12 @@ const MakingMemories = () => {
               shadow="lg"
             />
           </GridItem>
+          
         ))}
       </Grid>
+        <Button alignSelf="center" onClick={() => router.replace("/gallery")}>
+          See More
+        </Button>
     </VStack>
   );
 };

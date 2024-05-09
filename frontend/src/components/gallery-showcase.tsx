@@ -11,8 +11,8 @@ import {
   } from "@chakra-ui/react";
   import { useRouter } from "next/router";
   
-  const EventsShowcase = () => {
-    const eventsShowcaseData = [
+  const gallery = () => {
+    const galleryData = [
       {
         id: 1,
         title: "EESTEC ACADEMY: ROBOTICS",
@@ -42,23 +42,23 @@ import {
       <Flex h="100vh" pt={"5%"}>
         <Flex flexDirection="column">
           <Heading mb={"50px"} variant="h2" textAlign="center">
-            Events
+            Gallery
           </Heading>
   
           <Grid marginBottom="20px" gap={6} templateColumns="repeat(3, 1fr)">
-            {eventsShowcaseData.map((eventsShowcase) => (
-              <GridItem key={eventsShowcase.id}>
+            {galleryData.map((gallery) => (
+              <GridItem key={gallery.id}>
                 <Card padding="20px" h="60vh">
                   <VStack h="100%" spacing={5} align="stretch">
                     <Box
                       paddingBottom="81%"
-                      backgroundImage={`url(${eventsShowcase.imageUrl})`}
+                      backgroundImage={`url(${gallery.imageUrl})`}
                       backgroundSize={"cover"}
                       border="3px solid #E52A30"    
                     />
   
                     <Heading variant="h4" textTransform="uppercase">
-                      {eventsShowcase.title}
+                      {gallery.title}
                     </Heading>
                     <Text
                       textAlign="justify"
@@ -66,7 +66,7 @@ import {
                       overflowY="hidden"
                       paddingRight="10px"
                     >
-                      {eventsShowcase.description}
+                      {gallery.description}
                     </Text>
                   </VStack>
                 </Card>
@@ -74,7 +74,7 @@ import {
             ))}
           </Grid>
   
-          <Button alignSelf="center" onClick={() => router.replace("/events")}>
+          <Button alignSelf="center" onClick={() => router.replace("/gallery")}>
             See More
           </Button>
         </Flex>
@@ -82,5 +82,5 @@ import {
     );
   };
   
-  export default EventsShowcase;
+  export default gallery;
   

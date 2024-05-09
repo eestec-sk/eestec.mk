@@ -74,7 +74,7 @@ const BlogShowcase = () => {
           ))}
         </Grid>
 
-        <Button alignSelf="end" onClick={() => router.replace("/blog")}>
+        <Button alignSelf="center" onClick={() => router.replace("/blog")}>
           See More
         </Button>
       </Flex>

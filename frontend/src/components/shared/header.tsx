@@ -93,7 +93,17 @@ const Header = () => {
             Events
           </Text>
         </Link>
-        <Link href={"/blog"} marginLeft="10px">
+        <Link href={"/gallery"} marginLeft="10px">
+          <Text
+            textTransform={"uppercase"}
+            fontSize={18}
+            color="primary"
+            _hover={{ textDecoration: "underline" }}
+          >
+            Gallery
+          </Text>
+        </Link>
+        {/* <Link href={"/blog"} marginLeft="10px">
           <Text
             textTransform={"uppercase"}
             fontSize={18}
@@ -102,7 +112,7 @@ const Header = () => {
           >
             Blog
           </Text>
-        </Link>
+        </Link> */}
 
         <Link onClick={() => signIn()} marginLeft="10px">
           <Text
