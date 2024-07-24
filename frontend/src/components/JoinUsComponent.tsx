@@ -10,7 +10,7 @@ interface JoinUsProps {
 
 const JoinUsComponent = ({ img, heading, text } : JoinUsProps) => {
     return(
-        <div className="m-4 p-4">
+        <div className="m-4 p-4 flex">
             <Image src={img} alt="Join Us Image"></Image>
             <div className="font-eestec">
                 <h3 className="text-2xl text-eestec">{heading}</h3>
