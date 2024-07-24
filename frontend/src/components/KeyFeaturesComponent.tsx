@@ -2,7 +2,7 @@ import FeatureComponent from "./FeatureComponent";
 
 const KeyFeaturesComponent = () => {
     return(
-        <div className="md:flex gap-5">
+        <div className="md:flex gap-5 justify-center">
             <FeatureComponent img={""} heading={"100+"} subheading={"Events"} ></FeatureComponent>
             <FeatureComponent img={""} heading={"400+"} subheading={"Students"} ></FeatureComponent>
             <FeatureComponent img={""} heading={"30+"} subheading={"Partners"} ></FeatureComponent>
