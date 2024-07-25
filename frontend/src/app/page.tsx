@@ -1,16 +1,22 @@
+import JoinUsSectionComponent from "@/sections/JoinUsSectionComponent";
+import FooterComponent from "@/components/FooterComponent";
 import BlogComponent from "@/components/BlogComponent";
-import JoinUsSectionComponent from "@/components/JoinUsSectionComponent";
-import KeyFeaturesComponent from "@/components/KeyFeaturesComponent";
+import BoardCompomemnt from "@/sections/BoardCompoment";
+import KeyFeaturesComponent from "@/sections/KeyFeaturesComponent";
+import MemoriesComponent from "@/sections/MemoriesComponent";
+import MissionVisionComponent from "@/components/MissionVIsionComponent";
 import SubheadingComponent from "@/components/SubheadingComponent";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="container mx-auto">
-      <SubheadingComponent text={"Board 23/24"}></SubheadingComponent>
+    <div>
+      <MissionVisionComponent></MissionVisionComponent>
       <KeyFeaturesComponent></KeyFeaturesComponent>
       <JoinUsSectionComponent></JoinUsSectionComponent>
-      <BlogComponent img={""} heading={"Lorem ipsum"} text={"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa"}></BlogComponent>
-      </div>
+      <MemoriesComponent></MemoriesComponent>
+      <BoardCompomemnt></BoardCompomemnt>
+      <FooterComponent></FooterComponent>
+    </div>
   );
 }
