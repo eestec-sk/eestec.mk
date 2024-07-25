@@ -1,3 +1,5 @@
+import BoardCompomemnt from "@/components/BoardCompoment";
+import FooterComponent from "@/components/FooterComponent";
 import JoinUsSectionComponent from "@/components/JoinUsSectionComponent";
 import KeyFeaturesComponent from "@/components/KeyFeaturesComponent";
 import MemoriesComponent from "@/components/MemoriesComponent";
@@ -11,6 +13,8 @@ export default function Home() {
     <KeyFeaturesComponent></KeyFeaturesComponent>
     <JoinUsSectionComponent></JoinUsSectionComponent>
     <MemoriesComponent></MemoriesComponent>
+    <BoardCompomemnt></BoardCompomemnt>
+    <FooterComponent></FooterComponent>
     </div>
   );
 }

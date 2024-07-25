@@ -1,11 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
+import Img from '../images/logos_icons/flag_icon.svg'
+import Img2 from '../images/logos_icons/bulb.svg'
+
 const MissionVisionComponent = () => {
   return (
     <div className="md:flex gap-[20rem] justify-center bg-eestec">
       <article className="md:grid justify-items-center text-center flex m-3 my-5">
-        {/* <Image src={""} alt="Feature Image" className="p-3 m-2"></Image>  */}
+        <Image src={Img} alt="Feature Image" className="p-3 m-2"></Image> 
         <div>
           <h3 className="text-5xl font-bold">Our Mission</h3>
           <h6 className="text-justify w-[22rem]">
@@ -15,7 +18,7 @@ const MissionVisionComponent = () => {
         </div>
       </article>
       <article className="md:grid justify-items-center text-center flex m-3 my-5">
-        {/* <Image src={""} alt="Feature Image" className="p-3 m-2"></Image>  */}
+        <Image src={Img2} alt="Feature Image" className="p-3 m-2"></Image> 
         <div>
           <h3 className="text-5xl font-bold">Our Vision</h3>
           <h6 className="text-justify w-[23rem]">
