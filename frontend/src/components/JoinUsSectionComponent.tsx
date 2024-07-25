@@ -6,6 +6,7 @@ import JoinUsComponent from "./JoinUsComponent";
 const JoinUsSectionComponent = () => {
     return(
         <div className="m-2 grid">
+            <div><h3 className="text-3xl text-black font-bold">Why Should you Join us?</h3></div>
             <div className="justify-self-start">
               <JoinUsComponent img={""} heading={"International and local events"} text={"Be part of the organizing committee or simply attend an international workshop, exchange or motivational weekend. You will certainly not regret it!"}></JoinUsComponent>
             </div>
