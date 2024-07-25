@@ -8,13 +8,15 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="container mx-auto">
+    // <div className="container mx-auto">
+    <>
     <MissionVisionComponent></MissionVisionComponent>
     <KeyFeaturesComponent></KeyFeaturesComponent>
     <JoinUsSectionComponent></JoinUsSectionComponent>
     <MemoriesComponent></MemoriesComponent>
     <BoardCompomemnt></BoardCompomemnt>
     <FooterComponent></FooterComponent>
-    </div>
+    </>
+    // </div>
   );
 }

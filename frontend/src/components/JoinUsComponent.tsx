@@ -13,8 +13,8 @@ const JoinUsComponent = ({ img, heading, text } : JoinUsProps) => {
         <div className="m-4 p-4">
             <Image src={img} alt="Join Us Image"></Image>
             <div className="font-eestec">
-                <h3 className="text-2xl text-eestec">{heading}</h3>
-                <p className="text-black text-justify text-sm w-96">{text}</p>
+                <h3 className="text-3xl text-eestec">{heading}</h3>
+                <p className="text-black text-justify text-l  w-[27rem]">{text}</p>
             </div>
         </div>
     );

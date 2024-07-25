@@ -5,11 +5,12 @@ import Img from '../images/logos_icons/logo_white.svg'
 
 const FooterComponent = () => {
   return (
-    <div className="md:flex gap-[20rem] justify-center bg-eestec">
-      <article className="md:grid justify-items-center text-center flex m-3 my-5">
+    <div className="md:flex gap-[50rem] justify-center bg-eestec">
+      <article className="md:grid justify-items-center text-center flex m-3 my-5 items-center justify-center">
+      <div>
         <Image src={Img} alt="Feature Image" className=" m-2"></Image> 
-        <div>
-          <h6 className="text-center">
+        
+          <h6 className="">
           <strong>E</strong>lectrical <strong>E</strong>ngineering <strong>ST</strong>udents&apos; <br /> <strong>E</strong>uropean asso<strong>C</strong>iation
           </h6>
         </div>

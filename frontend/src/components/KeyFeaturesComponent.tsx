@@ -10,7 +10,7 @@ const KeyFeaturesComponent = () => {
             <FeatureComponent img={Img} heading={"100+"} subheading={"Events"} ></FeatureComponent>
             <FeatureComponent img={Img2} heading={"400+"} subheading={"Students"} ></FeatureComponent>
             <FeatureComponent img={Img3} heading={"30+"} subheading={"Partners"} ></FeatureComponent>
-            <FeatureComponent img={Img4} heading={"5900"} subheading={"Memories"} ></FeatureComponent>
+            <FeatureComponent img={Img4} heading={"900+"} subheading={"Memories"} ></FeatureComponent>
         </div>
     );
 }
