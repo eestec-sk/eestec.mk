@@ -7,6 +7,7 @@ import MemoriesComponent from "@/sections/MemoriesComponent";
 import MissionVisionComponent from "@/components/MissionVIsionComponent";
 import SubheadingComponent from "@/components/SubheadingComponent";
 import Image from "next/image";
+import SponsorsSupportersComponent from "@/sections/SponsorsSupportersComponent";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <JoinUsSectionComponent></JoinUsSectionComponent>
       <MemoriesComponent></MemoriesComponent>
       <BoardCompomemnt></BoardCompomemnt>
+      <SponsorsSupportersComponent></SponsorsSupportersComponent>
       <FooterComponent></FooterComponent>
     </div>
   );
