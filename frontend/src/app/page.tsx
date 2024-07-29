@@ -8,10 +8,12 @@ import MissionVisionComponent from "@/components/MissionVIsionComponent";
 import SubheadingComponent from "@/components/SubheadingComponent";
 import Image from "next/image";
 import SponsorsSupportersComponent from "@/sections/SponsorsSupportersComponent";
+import HeaderComponent from "@/components/HeaderComponent";
 
 export default function Home() {
   return (
     <div>
+      <HeaderComponent></HeaderComponent>
       <MissionVisionComponent></MissionVisionComponent>
       <KeyFeaturesComponent></KeyFeaturesComponent>
       <JoinUsSectionComponent></JoinUsSectionComponent>
