@@ -15,8 +15,8 @@ import HeaderComponent from "@/components/HeaderComponent";
 export default function Home() {
   return (
     <div>
-      <HeroComponent></HeroComponent>
       <HeaderComponent></HeaderComponent>
+      <HeroComponent></HeroComponent>
       <MissionVisionComponent></MissionVisionComponent>
       <KeyFeaturesComponent></KeyFeaturesComponent>
       <JoinUsSectionComponent></JoinUsSectionComponent>
