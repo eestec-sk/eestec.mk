@@ -10,11 +10,13 @@ import Image from "next/image";
 import SponsorsSupportersComponent from "@/sections/SponsorsSupportersComponent";
 import HeroComponent from "@/sections/HeroComponent";
 
+import HeaderComponent from "@/components/HeaderComponent";
 
 export default function Home() {
   return (
     <div>
       <HeroComponent></HeroComponent>
+      <HeaderComponent></HeaderComponent>
       <MissionVisionComponent></MissionVisionComponent>
       <KeyFeaturesComponent></KeyFeaturesComponent>
       <JoinUsSectionComponent></JoinUsSectionComponent>
