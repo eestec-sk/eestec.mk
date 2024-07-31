@@ -44,6 +44,12 @@ const HeaderComponent = () => {
                   Blog
                 </a>
                 <a
+                  href="/contact"
+                  className="text-eestec hover:bg-eestec hover:text-white rounded-lg p-2"
+                >
+                  Contact
+                </a>
+                <a
                   href="/login"
                   className="text-eestec hover:bg-eestec hover:text-white rounded-lg p-2"
                 >
@@ -120,6 +126,12 @@ const HeaderComponent = () => {
                 className="text-eestec block hover:bg-eestec hover:text-white rounded-lg p-2"
               >
                 Blog
+              </a>
+              <a
+                href="/contact"
+                className="text-eestec block hover:bg-eestec hover:text-white rounded-lg p-2"
+              >
+                Contact
               </a>
               <a
                 href="/login"

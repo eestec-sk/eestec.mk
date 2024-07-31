@@ -10,6 +10,8 @@ import Img7 from '../images/board-members/kristina.jpg';
 const BoardCompomemnt = () => {
     return(
     <>
+        <h3 className="text-black text-center text-2xl text-bold">BOARD MEMBERS 2023/24</h3>
+
         <div className="lg:flex gap-20 justify-center">
             <MembersComponent img={Img} heading={"Vasilaki Tocili"} subheading={"Chairperson"} ></MembersComponent>
             <MembersComponent img={Img2} heading={"Matej Filipovski"} subheading={"Contact Person"} ></MembersComponent>
