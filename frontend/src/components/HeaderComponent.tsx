@@ -102,7 +102,7 @@ const HeaderComponent = () => {
         </div>
         {isClick && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <div className="px-2 pt-2 pb-3 text-center space-y-1 sm:px-3">
               <a
                 href="/"
                 className="text-eestec block hover:bg-eestec hover:text-white rounded-lg p-2"
