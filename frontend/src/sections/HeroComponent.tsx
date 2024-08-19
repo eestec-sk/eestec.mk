@@ -17,7 +17,8 @@ const HeroComponent = () => {
       }}
     >
       <div className="container ">
-        <h3 className="font-eestec text-white lg:text-6xl md:text-5xl sm:text-4xl text-3xl uppercase font-black">
+        <h3 className="font-eestec text-white lg:text-6xl md:text-5xl sm:text-4xl text-3xl uppercase font-black"
+        style={{"paddingTop": "35rem;"}}>
           Power your future, <br /> 
         
         <Typewriter 

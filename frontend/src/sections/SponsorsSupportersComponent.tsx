@@ -1,3 +1,4 @@
+"use client"
 import Img from "../images/logos_icons/calendar.svg";
 import SponsorsComponent from "../components/SponsorsComponent";
 
