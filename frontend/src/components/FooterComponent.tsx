@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import {
+  FaDiscord,
   FaInstagram,
   FaLinkedin,
   FaSquareFacebook,
@@ -56,16 +57,16 @@ const FooterComponent = () => {
           <article className="grid justify-items-center md:px-10 px-1 py-4 my-2">
             <Link
               href={
-                "https://www.linkedin.com/company/eestec-lcskopje/?originalSubdomain=mk"
+                "https://discord.gg/UPpGaXzbuH"
               }
             >
               <IconComponent
-                icon={FaLinkedin}
+                icon={FaDiscord}
                 size="4rem"
                 color="white"
               ></IconComponent>
               <h3 className="text-center text-base text-neutral-700 underline text-white decoration-2 underline-offset-4 font-medium my-1">
-                {"LinkedIn"}
+                {"Discord"}
               </h3>
             </Link>
           </article>
