@@ -12,64 +12,20 @@ import {
 import Img from "../images/logos_icons/logo_white.svg";
 import Link from "next/link";
 import IconComponent from "./IconComponent";
+import { IconBaseProps } from "react-icons";
+import SocialMediaComponent from "./SocialMediaComponent";
 
 const FooterComponent = () => {
   return (
     <div className="md:flex xl:gap-80 gap-20 justify-center bg-eestec p-4">
       <nav className="flex md:justify-between items-center justify-center">
         <div className="md:grid grid-cols-4 justify-center items-center ">
-          <article className="grid justify-items-center md:px-10 px-1 py-4 my-2">
-            <Link href={"https://www.instagram.com/eesteclcskopje/"}>
-              <IconComponent
-                icon={FaInstagram}
-                size="4rem"
-                color="white"
-              ></IconComponent>
-              <h3 className="text-center text-base text-neutral-700 underline text-white decoration-2 underline-offset-4 font-medium my-1">
-                {"Instagram"}
-              </h3>
-            </Link>
-          </article>
-          <article className="grid justify-items-center md:px-10 px-1 py-4 my-2">
-            <Link href={"https://www.facebook.com/EESTECLCSkopje"}>
-              <IconComponent
-                icon={FaSquareFacebook}
-                size="4rem"
-                color="white"
-              ></IconComponent>
-              <h3 className="text-center text-base text-neutral-700 underline text-white decoration-2 underline-offset-4 font-medium my-1">
-                {"Facebook"}
-              </h3>
-            </Link>
-          </article>
-          <article className="grid justify-items-center md:px-10 px-1 py-4 my-2">
-            <Link href={"https://x.com/EESTEC_Skopje"}>
-              <IconComponent
-                icon={FaXTwitter}
-                size="4rem"
-                color="white"
-              ></IconComponent>
-              <h3 className="text-center text-base text-neutral-700 underline text-white decoration-2 underline-offset-4 font-medium my-1">
-                {"Twitter"}
-              </h3>
-            </Link>
-          </article>
-          <article className="grid justify-items-center md:px-10 px-1 py-4 my-2">
-            <Link
-              href={
-                "https://discord.gg/UPpGaXzbuH"
-              }
-            >
-              <IconComponent
-                icon={FaDiscord}
-                size="4rem"
-                color="white"
-              ></IconComponent>
-              <h3 className="text-center text-base text-neutral-700 underline text-white decoration-2 underline-offset-4 font-medium my-1">
-                {"Discord"}
-              </h3>
-            </Link>
-          </article>
+
+            <SocialMediaComponent mediaLink={"https://www.instagram.com/eesteclcskopje/"} icon={FaInstagram} text={"Instagram"} size={"4rem"}></SocialMediaComponent>
+            <SocialMediaComponent mediaLink={"https://www.facebook.com/EESTECLCSkopje"} icon={FaSquareFacebook} text={"Facebook"} size={"4rem"}></SocialMediaComponent>
+            <SocialMediaComponent mediaLink={"https://x.com/EESTEC_Skopje"} icon={FaXTwitter} text={"Twitter"} size={"4rem"}></SocialMediaComponent>
+            <SocialMediaComponent mediaLink={"https://discord.gg/UPpGaXzbuH"} icon={FaDiscord} text={"Discord"} size={"4rem"}></SocialMediaComponent>
+            
         </div>
       </nav>
       <article className="grid justify-items-center text-center m-3 my-5">
