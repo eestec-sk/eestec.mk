@@ -22,7 +22,7 @@ export default function Home() {
       <JoinUsSectionComponent></JoinUsSectionComponent>
       <MemoriesComponent></MemoriesComponent>
       <BoardCompomemnt></BoardCompomemnt>
-      <SponsorsSupportersComponent></SponsorsSupportersComponent>
+      {/* <SponsorsSupportersComponent></SponsorsSupportersComponent> */}
       <FooterComponent></FooterComponent>
     </div>
   );

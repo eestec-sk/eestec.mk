@@ -19,7 +19,7 @@ const FooterComponent = () => {
   return (
     <div className="md:flex xl:gap-80 gap-20 justify-center bg-eestec p-4">
       <nav className="flex md:justify-between items-center justify-center">
-        <div className="md:grid grid-cols-4 justify-center items-center ">
+        <div className="grid grid-cols-4 justify-center items-center ">
 
             <SocialMediaComponent mediaLink={"https://www.instagram.com/eesteclcskopje/"} icon={FaInstagram} text={"Instagram"} size={"4rem"}></SocialMediaComponent>
             <SocialMediaComponent mediaLink={"https://www.facebook.com/EESTECLCSkopje"} icon={FaSquareFacebook} text={"Facebook"} size={"4rem"}></SocialMediaComponent>

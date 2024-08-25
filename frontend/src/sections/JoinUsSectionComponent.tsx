@@ -26,7 +26,7 @@ const JoinUsSectionComponent = () => {
         <div>
           <SubheadingComponent text="Why Should you Join us?" />
         </div>
-        <div className="grid justify-self-start ">
+        <div className="grid justify-self-start">
           <JoinUsComponent
             img={Img}
             heading={"International and local events"}

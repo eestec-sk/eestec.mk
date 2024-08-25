@@ -16,13 +16,13 @@ const MemoriesComponent = () => {
         <div className="lg:px-36 md:px-16 px-4 grid justify-center items-center">
         <h3 className="text-black text-2xl text-bold text-center">MAKING MEMORIES SINCE 2003</h3>
         </div>
-        <div className="lg:flex justify-evenly items-center gap-14">
+        <div className="lg:flex justify-center items-center gap-20 p-3">
             <Image src={Img} alt="Sponsor Logo" style={{border: "5px solid #e52a30"  }} height={500}  width={500} className="mt-8 mb-8 "></Image>
             <Image src={Img2} alt="Sponsor Logo" style={{border: "5px solid #e52a30" }} height={500} width={500} className="mt-8 mb-8 "></Image>
             <Image src={Img3} alt="Sponsor Logo" style={{border: "5px solid #e52a30" }} height={500} width={500} className="mt-8 mb-8 "></Image>
         </div>
 
-        <div className="lg:flex justify-evenly items-center gap-14 ">
+        <div className="lg:flex justify-center items-center gap-20 p-3">
             <Image src={Img4} alt="Sponsor Logo" style={{border: "5px solid #e52a30" }} height={500} width={500} className="mt-8 mb-8 "></Image>
             <Image src={Img5} alt="Sponsor Logo" style={{border: "5px solid #e52a30" }} height={500} width={500} className="mt-8 mb-8 "></Image>
             <Image src={Img6} alt="Sponsor Logo" style={{border: "5px solid #e52a30" }} height={500} width={500} className="mt-8 mb-8 "></Image>
