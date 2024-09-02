@@ -4,15 +4,11 @@ import Image from "next/image";
 import {
   FaDiscord,
   FaInstagram,
-  FaLinkedin,
   FaSquareFacebook,
   FaXTwitter,
 } from "react-icons/fa6";
 
 import Img from "../images/logos_icons/logo_white.svg";
-import Link from "next/link";
-import IconComponent from "./IconComponent";
-import { IconBaseProps } from "react-icons";
 import SocialMediaComponent from "./SocialMediaComponent";
 
 const FooterComponent = () => {

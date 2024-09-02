@@ -2,8 +2,6 @@
 import Image from "next/image";
 import Img from "../../images/logos_icons/lightning.svg";
 import HeaderComponent from "@/components/HeaderComponent";
-import SkeletonComponent from "@/components/SkeletonComponent";
-import Link from "next/link";
 
 const events = () => {
   return (

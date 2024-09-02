@@ -12,7 +12,7 @@ interface FeatureProps {
 const FeatureComponent = ({ img, id, heading, subheading } : FeatureProps) => {
     useEffect(() => {
         const options = {
-              duration: 15,
+            duration: 15,
             };
         const count1 = new CountUp(id.toString(), id, options);
     

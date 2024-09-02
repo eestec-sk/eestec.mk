@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Img from "../../images/logos_icons/lightning.svg";
-
 import Img2 from "../../images/logos_icons/padlock icon.svg";
 import HeaderComponent from "@/components/HeaderComponent";
 

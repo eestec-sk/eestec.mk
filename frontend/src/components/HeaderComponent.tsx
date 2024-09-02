@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Img from "../images/logos_icons/Skopje.svg";
+import Link from "next/link";
 
 const HeaderComponent = () => {
   const [isClick, setisClick] = useState(false);
@@ -25,42 +26,45 @@ const HeaderComponent = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-4 flex items-center space-x-4">
-                <a
-                  href="/"
+                <Link
+                  href={"/"}
                   className="text-eestec hover:bg-eestec hover:text-white rounded-lg p-2"
                 >
                   Home
-                </a>
-                <a
-                  href="/events"
+                </Link>
+
+                <Link
+                  href={"/events"}
                   className="text-eestec hover:bg-eestec hover:text-white rounded-lg p-2"
                 >
                   Events
-                </a>
-                <a
-                  href="/blog"
+                </Link>
+
+                <Link
+                  href={"/blog"}
                   className="text-eestec hover:bg-eestec hover:text-white rounded-lg p-2"
                 >
                   Blog
-                </a>
-                <a
-                  href="/contact"
+                </Link>
+
+                <Link
+                  href={"/contact"}
                   className="text-eestec hover:bg-eestec hover:text-white rounded-lg p-2"
                 >
                   Contact
-                </a>
-                <a
-                  href="/login"
+                </Link>
+                <Link
+                  href={"/login"}
                   className="text-eestec hover:bg-eestec hover:text-white rounded-lg p-2"
                 >
                   Login
-                </a>
-                <a
-                  href="/register"
+                </Link>
+                <Link
+                  href={"/register"}
                   className="text-eestec hover:bg-eestec hover:text-white rounded-lg p-2"
                 >
                   Register
-                </a>
+                </Link>
               </div>
             </div>
             <div className="md:hidden flex items-center">
@@ -109,42 +113,46 @@ const HeaderComponent = () => {
         {isClick && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 text-center space-y-1 sm:px-3">
-              <a
-                href="/"
+              <Link
+                href={"/"}
                 className="text-eestec block hover:bg-eestec hover:text-white rounded-lg p-2"
               >
                 Home
-              </a>
-              <a
-                href="/events"
+              </Link>
+
+              <Link
+                href={"/events"}
                 className="text-eestec block hover:bg-eestec hover:text-white rounded-lg p-2"
               >
                 Events
-              </a>
-              <a
-                href="/blog"
+              </Link>
+
+              <Link
+                href={"/blog"}
                 className="text-eestec block hover:bg-eestec hover:text-white rounded-lg p-2"
               >
                 Blog
-              </a>
-              <a
-                href="/contact"
+              </Link>
+
+              <Link
+                href={"/contact"}
                 className="text-eestec block hover:bg-eestec hover:text-white rounded-lg p-2"
               >
                 Contact
-              </a>
-              <a
-                href="/login"
+              </Link>
+
+              <Link
+                href={"/login"}
                 className="text-eestec block hover:bg-eestec hover:text-white rounded-lg p-2"
               >
                 Login
-              </a>
-              <a
-                href="/register"
+              </Link>
+              <Link
+                href={"/register"}
                 className="text-eestec block hover:bg-eestec hover:text-white rounded-lg p-2"
               >
                 Register
-              </a>
+              </Link>
             </div>
           </div>
         )}
