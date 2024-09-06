@@ -8,7 +8,7 @@ import Img2 from "../images/logos_icons/meeting people.svg";
 import Img3 from "../images/logos_icons/development.svg";
 import SubheadingComponent from "@/components/SubheadingComponent";
 
-import HeroImage from "../images/testing/testing.png";
+import HeroImage from "../images/testing/bg.png";
 
 const JoinUsSectionComponent = () => {
   return (
@@ -19,6 +19,7 @@ const JoinUsSectionComponent = () => {
         backgroundPosition: `center`,
         backgroundSize: `cover`,
         backgroundRepeat: `no-repeat`,
+        // height: "60rem",
        
       }}
     >
