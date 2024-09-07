@@ -6,11 +6,12 @@ import Img4 from '../images/board-members/marina.jpg';
 import Img5 from '../images/board-members/ivana.jpg';
 import Img6 from '../images/board-members/toni.jpg';
 import Img7 from '../images/board-members/kristina.jpg';
+import SubheadingComponent from "@/components/SubheadingComponent";
 
 const BoardCompomemnt = () => {
     return(
     <>
-        <h3 className="text-black text-center text-2xl text-bold">BOARD MEMBERS 2023/24</h3>
+    <SubheadingComponent text={"BOARD MEMBERS 2023/24"}></SubheadingComponent>
 
         <div className="lg:flex gap-20 justify-center">
             <MembersComponent img={Img} heading={"Vasilaki Tocili"} subheading={"Chairperson"} ></MembersComponent>

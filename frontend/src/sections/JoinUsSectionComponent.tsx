@@ -9,6 +9,7 @@ import Img3 from "../images/logos_icons/development.svg";
 import SubheadingComponent from "@/components/SubheadingComponent";
 
 import HeroImage from "../images/testing/bg.png";
+import { styleText } from "util";
 
 const JoinUsSectionComponent = () => {
   return (
@@ -19,12 +20,12 @@ const JoinUsSectionComponent = () => {
         backgroundPosition: `center`,
         backgroundSize: `cover`,
         backgroundRepeat: `no-repeat`,
-        // height: "60rem",
+        height: "67rem",
        
       }}
     >
       <div className="m-2 grid justify-items-center">
-        <div>
+        <div className="grid justify-self-start">
           <SubheadingComponent text="Why Should you Join us?" />
         </div>
         <div className="grid justify-self-start">
