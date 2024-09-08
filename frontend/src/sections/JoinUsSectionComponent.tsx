@@ -20,7 +20,7 @@ const JoinUsSectionComponent = () => {
         backgroundPosition: `center`,
         backgroundSize: `cover`,
         backgroundRepeat: `no-repeat`,
-        height: "67rem",
+        height: "70rem",
        
       }}
     >
