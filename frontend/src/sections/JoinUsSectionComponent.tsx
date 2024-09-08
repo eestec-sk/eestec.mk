@@ -10,6 +10,7 @@ import SubheadingComponent from "@/components/SubheadingComponent";
 
 import HeroImage from "../images/testing/bg.png";
 import { styleText } from "util";
+import { BsJustifyRight } from "react-icons/bs";
 
 const JoinUsSectionComponent = () => {
   return (
@@ -46,7 +47,7 @@ const JoinUsSectionComponent = () => {
             }
           ></JoinUsComponent>
         </div>
-        <div className="grid justify-self-end">
+        <div className="grid justify-self-end" style={{justifySelf: "right"}}>
           <JoinUsComponent
             img={Img3}
             heading={"Personal development"}
