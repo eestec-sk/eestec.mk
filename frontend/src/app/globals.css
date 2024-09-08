@@ -71,3 +71,16 @@ body {
 .button:hover{
   box-shadow: inset -3px -3px #E52A30,inset 3px 3px #B20D13;
 }
+
+
+@media (min-width: 1024px) { 
+  .zoom{
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .zoom:hover{
+    /* transition: transform 0.3s ease-in-out; */
+    transform: scale(1.10);
+    /* border: 5px solid red; */
+  }
+}

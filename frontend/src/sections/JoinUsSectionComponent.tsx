@@ -7,10 +7,8 @@ import Img from "../images/logos_icons/events.svg";
 import Img2 from "../images/logos_icons/meeting people.svg";
 import Img3 from "../images/logos_icons/development.svg";
 import SubheadingComponent from "@/components/SubheadingComponent";
-
 import HeroImage from "../images/testing/bg.png";
-import { styleText } from "util";
-import { BsJustifyRight } from "react-icons/bs";
+import Line from "../images/logos_icons/red_line.svg";
 
 const JoinUsSectionComponent = () => {
   return (
@@ -21,13 +19,13 @@ const JoinUsSectionComponent = () => {
         backgroundPosition: `center`,
         backgroundSize: `cover`,
         backgroundRepeat: `no-repeat`,
-        height: "70rem",
+        height: "67rem",
        
       }}
     >
       <div className="m-2 grid justify-items-center">
         <div className="grid justify-self-start">
-          <SubheadingComponent text="Why Should you Join us?" />
+          <SubheadingComponent text="Why Should you Join us?" img={Line} />
         </div>
         <div className="grid justify-self-start">
           <JoinUsComponent

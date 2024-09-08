@@ -1,12 +1,17 @@
 "use client"
+import Image from "next/image";
 
 interface SubheadingProps {
-    text: string
+    text: string,
+    img: string,
 }
 
-const SubheadingComponent = ({ text } : SubheadingProps) => {
+const SubheadingComponent = ({ text, img } : SubheadingProps) => {
     return(
-        <h3 className="font-eestec text-center font-bold text-3xl text-black capitalize my-3">{text}</h3>
+        <div className="ustify-self-start grid justify-items-center">
+        <h3 className="font-eestec text-center font-bold text-2xl md:text-4xl text-black capitalize my-5">{text}</h3>
+        <Image src={img} alt="Feature Image" className="w-72 md:w-auto"></Image> 
+        </div>
     );
 }
 export default SubheadingComponent;

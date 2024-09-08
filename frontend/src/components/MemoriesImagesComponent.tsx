@@ -15,7 +15,7 @@ const MemoriesImagesComponent = ({ img, text }: MemoriesProps) => {
       style={{ border: "5px solid #e52a30", borderRadius: "5%" }}
       height={500}
       width={500}
-      className="mt-8 mb-8 "
+      className="mt-8 mb-8 zoom"
     ></Image>
   );
 };

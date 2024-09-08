@@ -8,13 +8,14 @@ import Img5 from '../images/memories/memory5.jpg'
 import Img6 from '../images/memories/memory6.jpg'
 import MemoriesImagesComponent from "@/components/MemoriesImagesComponent";
 import SubheadingComponent from "@/components/SubheadingComponent";
+import Line from "../images/logos_icons/red_line_right.svg";
 
 const MemoriesComponent = () => {
     return(
         <section className="my-10 md:mx-28 mx-12">
             
         <div className="lg:px-36 md:px-16 px-4 grid justify-center items-center">
-            <SubheadingComponent text={"MAKING MEMORIES SINCE 2003"}></SubheadingComponent>
+            <SubheadingComponent text={"MAKING MEMORIES SINCE 2003"} img={Line}></SubheadingComponent>
         </div>
         <div className="lg:flex justify-center items-center gap-20 p-3">
         <MemoriesImagesComponent img={Img.src} text={"test"}></MemoriesImagesComponent>
