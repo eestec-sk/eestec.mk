@@ -39,7 +39,8 @@ jobs:
         env:
           BASE_SERVER_PB_KEY: ${{ secrets.BASE_SERVER_PB_KEY }}
         run: |
-          ssh -p 1122 -i ${{secrets.BASE_SERVER_PB_KEY}} eestec@ip.42.mk
+          echo ${{secrets.BASE_SERVER_PB_KEY}} > temp_secret
+          ssh -p 1122 -i temp_secret eestec@ip.42.mk
           cd eestecmk
           docker-compose pull
           docker-compose up
