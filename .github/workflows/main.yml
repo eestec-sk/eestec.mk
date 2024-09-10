@@ -35,12 +35,16 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/lcskopje_private:eestecmk
 
-      - name: Login to Base Server and Restart Services
-        env:
-          BASE_SERVER_PB_KEY: ${{ secrets.BASE_SERVER_PB_KEY }}
-        run: |
-          echo ${{secrets.BASE_SERVER_PB_KEY}} > temp_secret
-          ssh -p 1122 -i temp_secret -tt eestec@ip.42.mk
-          cd eestecmk
-          docker-compose pull
-          docker-compose up
+      # - name: Login to Base Server and Restart Services
+      #   env:
+      #     BASE_SERVER_PB_KEY: ${{ secrets.BASE_SERVER_PB_KEY }}
+      #   run: |
+      #     echo ${{secrets.BASE_SERVER_PB_KEY}} > temp_secret
+      #     chmod 600 temp_secret  # Restrict file permissions
+      #     ssh -o StrictHostKeyChecking=no -p 1122 -i temp_secret -tt eestec@ip.42.mk << 'EOF'
+      #       cd eestecmk
+      #       docker-compose pull
+      #       docker-compose up -d
+      #       exit
+      #     EOF
+          
