@@ -18,7 +18,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
-      
+
       - name: Build and push backend Strapi Image
         uses: docker/build-push-action@v2
         with:
@@ -34,3 +34,12 @@ jobs:
           file: ./frontend/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/lcskopje_private:eestecmk
+
+      - name: Login to Base Server and Restart Services
+        env:
+          BASE_SERVER_PB_KEY: ${{ secrets.BASE_SERVER_PB_KEY }}
+        run: |
+          ssh -p 1122 -i ${{secrets.BASE_SERVER_PB_KEY}} eestec@ip.42.mk
+          cd eestecmk
+          docker-compose pull
+          docker-compose up
