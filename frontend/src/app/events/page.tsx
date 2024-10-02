@@ -1,17 +1,14 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import HeaderComponent from "@/components/HeaderComponent";
 import SkeletonComponent from "@/components/SkeletonComponent";
-import Link from "next/link";
-import Img from "../../images/events-showcase/b2b.png";
+import Img from "../../images/events-showcase/lht.svg";
 import Img2 from "../../images/events-showcase/ea-robotics.png";
-import Img3 from "../../images/events-showcase/gamedev.png";
-import Img4 from "../../images/events-showcase/b2b.png";
-import Img5 from "../../images/events-showcase/b2b.png";
+import Img3 from "../../images/events-showcase/ssa.png";
+import Img4 from "../../images/events-showcase/challenge.png";
+import Img5 from "../../images/events-showcase/calu.png";
 import Img6 from "../../images/events-showcase/b2b.png";
-import Img7 from "../../images/events-showcase/b2b.png";
-import Img8 from "../../images/events-showcase/b2b.png";
-import Img9 from "../../images/events-showcase/b2b.png";
 
 const events = () => {
   return (
@@ -31,60 +28,68 @@ const events = () => {
         </h3>
 
         <div className="lg:flex gap-20 justify-center my-[4rem]">
-          <div className="md:visible">
+          <div>
             <SkeletonComponent
               img={Img}
-              title={"Back to Basics"}
+              title={"Learn How To"}
               date={"01.01.1970"}
-              info={"Lorem"}
-              link={"123"}
+              info={
+                "Learn How to develop Apps and Improve Your Coding Skills with EESTEC LC Skopje!"
+              }
+              link={"https://lht.eestec.mk/"}
             ></SkeletonComponent>
           </div>
-          <div className=" max-md:hidden lg:visible">
+          <div>
             <SkeletonComponent
               img={Img2}
-              title={"Back to Basics"}
+              title={"EESTEC ACADEMY"}
               date={"01.01.1970"}
-              info={"Lorem"}
-              link={"123"}
+              info={"Stay on top of popular technologies with EESTEC ACADEMY!"}
+              link={"https://academy.eestec.mk/"}
             ></SkeletonComponent>
           </div>
-          <div className=" max-md:hidden lg:visible">
+          <div>
             <SkeletonComponent
               img={Img3}
-              title={"Back to Basics"}
+              title={"SOFT SKILLS ACADEMY"}
               date={"01.01.1970"}
-              info={"Lorem"}
-              link={"123"}
+              info={
+                "A series of free trainings aimed at improving the soft skills of students."
+              }
+              link={"https://www.instagram.com/ssa_skopje/"}
             ></SkeletonComponent>
           </div>
         </div>
         <div className="lg:flex gap-20 justify-center my-[4rem]">
-          <div className="md:visible">
+          <div>
             <SkeletonComponent
               img={Img4}
-              title={"Back to Basics"}
+              title={"EESTech Challenge"}
               date={"01.01.1970"}
-              info={"Lorem"}
-              link={"123"}
+              info={
+                "EESTech Challenge  is the students’ international competition organized by EESTEC."
+              }
+              link={"https://www.instagram.com/eestech_challenge_lc_skopje/"}
             ></SkeletonComponent>
           </div>
-          <div className=" max-md:hidden lg:visible">
+          <div>
             <SkeletonComponent
               img={Img5}
-              title={"Back to Basics"}
+              title={"Code Up, Level Up"}
               date={"01.01.1970"}
-              info={"Lorem"}
-              link={"123"}
+              info={"Level Up Your Coding Skills"}
+              link={"https://calu.eestec.mk/"}
             ></SkeletonComponent>
           </div>
-          <div className=" max-md:hidden lg:visible">
+          <div>
             <SkeletonComponent
               img={Img6}
               title={"Back to Basics"}
               date={"01.01.1970"}
-              info={"Lorem"}
-              link={"123"}
+              info={
+                "Free lecture series on the basics of structured programming!"
+              }
+              link={"https://www.instagram.com/b2b_skopje/"}
             ></SkeletonComponent>
           </div>
         </div>
@@ -98,7 +103,7 @@ const events = () => {
               link={"123"}
             ></SkeletonComponent>
           </div>
-          <div className=" max-md:hidden lg:visible">
+          <div>
             <SkeletonComponent
               img={Img8}
               title={"Back to Basics"}
@@ -107,7 +112,7 @@ const events = () => {
               link={"123"}
             ></SkeletonComponent>
           </div>
-          <div className=" max-md:hidden lg:visible">
+          <div>
             <SkeletonComponent
               img={Img9}
               title={"Back to Basics"}
@@ -118,11 +123,11 @@ const events = () => {
           </div>
         </div> */}
 
-        <div className="justify-center text-center">
+        {/* <div className="justify-center text-center">
           <Link href={"/"} className="button-drug p-1">
             Load More
           </Link>
-        </div>
+        </div> */}
       </div>
       {/* <div className="md:flex justify-center bg-eestec">
         <article className="grid justify-items-center text-center lg:my-6">

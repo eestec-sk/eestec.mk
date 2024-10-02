@@ -34,7 +34,7 @@ const SkeletonComponent = ({ img, title, date, info, link }: EventProps) => {
     >
       <div style={{ flex: "1 1 60%", background: "#eee" }}>
         <Image
-          src={Img}
+          src={img}
           alt={"Event"}
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         ></Image>
@@ -77,6 +77,7 @@ const SkeletonComponent = ({ img, title, date, info, link }: EventProps) => {
             fontSize: "16px",
           }}
           href={link}
+          target="_blank"
         >
           Read More
         </Link>
