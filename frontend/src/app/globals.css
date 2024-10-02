@@ -26,12 +26,14 @@ body {
     text-wrap: balance;
   }
 }
-
-.button{
-  --chakra-transition-property-common: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
-  --chakra-transition-property-colors: background-color,border-color,color,fill,stroke;
-  --chakra-transition-property-dimensions: width,height;
-  --chakra-transition-property-background: background-color,background-image,background-position;
+.button {
+  --chakra-transition-property-common: background-color, border-color, color,
+    fill, stroke, opacity, box-shadow, transform;
+  --chakra-transition-property-colors: background-color, border-color, color,
+    fill, stroke;
+  --chakra-transition-property-dimensions: width, height;
+  --chakra-transition-property-background: background-color, background-image,
+    background-position;
   --chakra-transition-easing-ease-in: cubic-bezier(0.4, 0, 1, 1);
   --chakra-transition-easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
   --chakra-transition-easing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
@@ -64,23 +66,73 @@ body {
   padding-right: 30px;
   background-color: var(--chakra-colors-primary);
   color: var(--chakra-colors-white);
-  border: 1px solid #B20D13;
-  box-shadow: inset -3px -3px #B20D13,inset 3px 3px white;
+  border: 1px solid #b20d13;
+  box-shadow: inset -3px -3px #b20d13, inset 3px 3px white;
+}
+.button:hover {
+  box-shadow: inset -3px -3px #e52a30, inset 3px 3px #b20d13;
 }
 
-.button:hover{
-  box-shadow: inset -3px -3px #E52A30,inset 3px 3px #B20D13;
+.button-drug {
+  --chakra-transition-property-common: background-color, border-color, color,
+    fill, stroke, opacity, box-shadow, transform;
+  --chakra-transition-property-colors: background-color, border-color, color,
+    fill, stroke;
+  --chakra-transition-property-dimensions: width, height;
+  --chakra-transition-property-background: background-color, background-image,
+    background-position;
+  --chakra-transition-easing-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --chakra-transition-easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --chakra-transition-easing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --chakra-transition-duration-ultra-fast: 50ms;
+  --chakra-transition-duration-faster: 100ms;
+  --chakra-transition-duration-fast: 150ms;
+  --chakra-transition-duration-normal: 200ms;
+  --chakra-transition-duration-slow: 300ms;
+  --chakra-transition-duration-slower: 400ms;
+  --chakra-transition-duration-ultra-slow: 500ms;
+  color-scheme: light;
+  font-family: inherit;
+  font-size: 100%;
+  overflow: visible;
+  background: transparent;
+  cursor: pointer;
+  appearance: none;
+  -webkit-box-pack: center;
+  user-select: none;
+  white-space: nowrap;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  line-height: 1.2;
+  border-radius: 10px;
+  font-weight: var(--chakra-fontWeights-semibold);
+  transition-property: var(--chakra-transition-property-common);
+  transition-duration: var(--chakra-transition-duration-normal);
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #e52a30; /* Modified color */
+  color: var(--chakra-colors-white);
+  border: 1px solid #b20d13;
+  box-shadow: inset -3px -3px #b20d13, inset 3px 3px white;
 }
 
+.button-drug:hover {
+  box-shadow: inset -3px -3px #e52a30, inset 3px 3px #b20d13;
+}
 
-@media (min-width: 1024px) { 
-  .zoom{
+.skeleton-card:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 1024px) {
+  .zoom {
     transition: transform 0.3s ease-in-out;
   }
-  
-  .zoom:hover{
+
+  .zoom:hover {
     /* transition: transform 0.3s ease-in-out; */
-    transform: scale(1.10);
+    transform: scale(1.1);
     /* border: 5px solid red; */
   }
 }
