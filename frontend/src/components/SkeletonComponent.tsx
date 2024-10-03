@@ -1,6 +1,5 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-import Img from "../images/events-showcase/b2b.png";
 import Link from "next/link";
 
 interface EventProps {
