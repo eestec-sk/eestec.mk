@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Img from "../../images/logos_icons/lightning.svg";
 import HeaderComponent from "@/components/HeaderComponent";
-import SkeletonComponent from "@/components/SkeletonComponent";
+import BlogSkeletonComponent from "@/components/BlogSkeletonComponent";
 import Link from "next/link";
 
 const events = () => {
@@ -24,16 +24,16 @@ const events = () => {
 
         <div className="lg:flex gap-20 justify-center my-[4rem]">
             <div className=" max-md:hidden lg:visible">
-            <SkeletonComponent></SkeletonComponent>
+            <BlogSkeletonComponent></BlogSkeletonComponent>
             </div>
             <div className=" max-md:hidden lg:visible">
-            <SkeletonComponent></SkeletonComponent>
+            <BlogSkeletonComponent></BlogSkeletonComponent>
             </div>
             <div className=" max-md:hidden lg:visible">
-            <SkeletonComponent></SkeletonComponent>
+            <BlogSkeletonComponent></BlogSkeletonComponent>
             </div>
             <div className="md:visible">
-            <SkeletonComponent></SkeletonComponent>
+            <BlogSkeletonComponent></BlogSkeletonComponent>
             </div>
         </div>
 
