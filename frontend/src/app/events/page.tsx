@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import HeaderComponent from "@/components/HeaderComponent";
 import SkeletonComponent from "@/components/SkeletonComponent";
@@ -40,7 +38,7 @@ const Events = () => {
       img: Img3,
       title: "SOFT SKILLS ACADEMY",
       date: "01.01.1970",
-      info: "A series of free trainings aimed at improving the soft skills of students.",
+      info: "A series of free trainings aimed at improving the soft skills of students",
       link: "https://www.instagram.com/ssa_skopje/",
       tag: "international",
     },
@@ -48,7 +46,7 @@ const Events = () => {
       img: Img4,
       title: "EESTech Challenge",
       date: "01.01.1970",
-      info: "EESTech Challenge  is the students’ international competition organized by EESTEC.",
+      info: "EESTech Challenge  is the students’ international competition organized by EESTEC",
       link: "https://www.instagram.com/eestech_challenge_lc_skopje/",
       tag: "international",
     },
@@ -56,7 +54,7 @@ const Events = () => {
       img: Img5,
       title: "Code Up, Level Up",
       date: "01.01.1970",
-      info: "Level Up Your Coding Skills",
+      info: "International workshop on various topics related to app development",
       link: "https://calu.eestec.mk/",
       tag: "international",
     },
@@ -64,7 +62,7 @@ const Events = () => {
       img: Img6,
       title: "Back to Basics",
       date: "01.01.1970",
-      info: "Free lecture series on the basics of structured programming!",
+      info: "Free lecture series on the basics of structured programming among FCSE students!",
       link: "https://www.instagram.com/b2b_skopje/",
       tag: "local",
     },
@@ -72,32 +70,32 @@ const Events = () => {
       img: Img7,
       title: "IT Sprint",
       date: "01.01.1970",
-      info: "Free lecture series on the basics of structured programming!",
-      link: "https://www.instagram.com/b2b_skopje/",
+      info: "International event about software development technologies and IT topics related to EESTEC's applications",
+      link: "https://eestec.net/cities/skopje",
       tag: "international",
     },
     {
       img: Img8,
       title: "EESTECers Gone Wild",
       date: "01.01.1970",
-      info: "Free lecture series on the basics of structured programming!",
-      link: "https://www.instagram.com/b2b_skopje/",
+      info: "International summer cultural exchange at various locations in Macedonia",
+      link: "https://eestec.net/events/eestecers-gone-wild-5",
       tag: "international",
     },
     {
       img: Img9,
       title: "Robomac",
       date: "01.01.1970",
-      info: "Free lecture series on the basics of structured programming!",
-      link: "https://www.instagram.com/b2b_skopje/",
+      info: "Competition in the field of robotics promoting robotics and electronics among students in Macedonia and surrounding countries",
+      link: "https://eestec.net/cities/skopje",
       tag: "local",
     },
     {
       img: Img10,
       title: "Live Regional Meeting",
       date: "01.01.1970",
-      info: "Free lecture series on the basics of structured programming!",
-      link: "https://www.instagram.com/b2b_skopje/",
+      info: "Yearly meetup for representatives of the same EESTEC region exchanging experiences and ideas",
+      link: "https://eestec.net/events/regional-meeting-eestecers-on-the-orient-express",
       tag: "international",
     },
   ];
@@ -128,13 +126,13 @@ const Events = () => {
           <input
             type="text"
             placeholder="Search events..."
-            className="p-2 border border-gray-300 rounded-lg bg-eestec text-white placeholder-white"
+            className="p-3 border border-gray-300 rounded-lg bg-eestec text-white placeholder-white"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
           <div className="flex gap-2">
             <button
-              className={`p-2 border rounded-lg bg-eestec text-white ${
+              className={`p-3 border rounded-lg bg-eestec text-white ${
                 selectedTag === "all" ? "bg-red-700" : ""
               }`}
               onClick={() => setSelectedTag("all")}
@@ -142,7 +140,7 @@ const Events = () => {
               All
             </button>
             <button
-              className={`p-2 border rounded-lg bg-eestec text-white ${
+              className={`p-3 border rounded-lg bg-eestec text-white ${
                 selectedTag === "local" ? "bg-red-700" : ""
               }`}
               onClick={() => setSelectedTag("local")}
@@ -150,7 +148,7 @@ const Events = () => {
               Local
             </button>
             <button
-              className={`p-2 border rounded-lg bg-eestec text-white ${
+              className={`p-3 border rounded-lg bg-eestec text-white ${
                 selectedTag === "international" ? "bg-red-700" : ""
               }`}
               onClick={() => setSelectedTag("international")}

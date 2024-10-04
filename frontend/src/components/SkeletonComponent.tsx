@@ -25,17 +25,17 @@ const SkeletonComponent = ({ img, title, date, info, link }: EventProps) => {
           <h2 className="font-bold text-2xl" style={{ margin: "0 0 8px 0" }}>
             {title}
           </h2>
-          <p
+          {/* <p
             className="text-sm"
             style={{ margin: "0 0 16px 0", color: "#888" }}
           >
             {date}
-          </p>
+          </p> */}
           <p className="text-sm" style={{ margin: "0 0 16px 0" }}>
             {info}
           </p>
         </div>
-        <Link className="link-event" href={link} target="_blank">
+        <Link className="link-event mt-5" href={link} target="_blank">
           Read More
         </Link>
       </div>
