@@ -1,11 +1,10 @@
 "use client";
 import Image from "next/image";
-import Img from "../../images/logos_icons/lightning.svg";
 import HeaderComponent from "@/components/HeaderComponent";
 const register = () => {
   return (
     <div>
-      <HeaderComponent></HeaderComponent>
+      <HeaderComponent/>
       <div
         className="w-full p-10"
         style={{
@@ -120,7 +119,7 @@ const register = () => {
 
       <div className="md:flex justify-center bg-eestec">
         <article className="grid justify-items-center text-center lg:my-6">
-          <Image src={Img} alt="Feature Image" className="-mt-5"></Image>
+          <Image src={"/images/logos_icons/lightning.svg"} width={40} height={40} alt="Feature Image" className="-mt-5"/>
         </article>
       </div>
     </div>

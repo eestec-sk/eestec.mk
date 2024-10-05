@@ -1,13 +1,12 @@
 "use client";
 import Image from "next/image";
-import Img from "../../images/logos_icons/lightning.svg";
 import Img2 from "../../images/logos_icons/padlock icon.svg";
 import HeaderComponent from "@/components/HeaderComponent";
 
 const reset = () => {
   return (
     <div>
-      <HeaderComponent></HeaderComponent>
+      <HeaderComponent />
       <div
         className="w-full p-10"
         style={{
@@ -26,7 +25,7 @@ const reset = () => {
                     src={Img2}
                     alt="Feature Image"
                     className="justify-center"
-                  ></Image>
+                  />
                 </article>
               </div>
 
@@ -65,8 +64,7 @@ const reset = () => {
                   required
                 />
               </div>
-              
-             
+
               <button
                 type="submit"
                 className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
@@ -80,7 +78,13 @@ const reset = () => {
 
       <div className="md:flex justify-center bg-eestec">
         <article className="grid justify-items-center text-center lg:my-6">
-          <Image src={Img} alt="Feature Image" className="mt-[6.68rem]"></Image>
+          <Image
+            src={"/images/logos_icons/lightning.svg"}
+            width={40}
+            height={40}
+            alt="Feature Image"
+            className="mt-[6.68rem]"
+            />
         </article>
       </div>
     </div>

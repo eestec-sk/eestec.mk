@@ -1,13 +1,11 @@
 "use client";
 import Image from "next/image";
-import Img from "../../images/logos_icons/lightning.svg";
-import Img2 from "../../images/logos_icons/penguin_icon.svg";
 import HeaderComponent from "@/components/HeaderComponent";
 
 const forgot = () => {
   return (
     <div>
-      <HeaderComponent></HeaderComponent>
+      <HeaderComponent/>
       <div
         className="w-full p-10"
         style={{
@@ -23,17 +21,21 @@ const forgot = () => {
               <div className="md:flex justify-center">
                 <article className="grid justify-items-center text-center lg:my-6">
                   <Image
-                    src={Img2}
+                    src={"/images/logos_icons/penguin_icon.svg"}
+                    width={100}
+                    height={100}
                     alt="Feature Image"
                     className="justify-center"
-                  ></Image>
+                  />
                 </article>
               </div>
 
               <h4 className="text-3xl text-center font-medium text-gray-900 dark:text-white">
                 Forgot Password?
               </h4>
-              <p className="text-sm">We will email you a link to reset your password</p>
+              <p className="text-sm">
+                We will email you a link to reset your password
+              </p>
               <div>
                 <label
                   htmlFor="email"
@@ -50,8 +52,7 @@ const forgot = () => {
                   required
                 />
               </div>
-              
-             
+
               <button
                 type="submit"
                 className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
@@ -59,7 +60,6 @@ const forgot = () => {
                 Send reset link
               </button>
               <div className="text-sm text-center font-medium text-gray-500 dark:text-gray-300">
-                
                 <a
                   href="/login"
                   className="text-blue-700 text-center hover:underline dark:text-blue-500"
@@ -74,7 +74,13 @@ const forgot = () => {
 
       <div className="md:flex justify-center bg-eestec">
         <article className="grid justify-items-center text-center lg:my-6">
-          <Image src={Img} alt="Feature Image" className="mt-[5.77rem]"></Image>
+          <Image
+            src={"/images/logos_icons/lightning.svg"}
+            width={40}
+            height={40}
+            alt="Feature Image"
+            className="mt-[5.77rem]"
+          />
         </article>
       </div>
     </div>

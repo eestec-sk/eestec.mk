@@ -16,7 +16,7 @@ const Events = () => {
 
   return (
     <div>
-      <HeaderComponent></HeaderComponent>
+      <HeaderComponent/>
       <div
         className="w-full p-10"
         style={{
@@ -75,7 +75,7 @@ const Events = () => {
                 date={event.date}
                 info={event.info}
                 link={event.link}
-              ></SkeletonComponent>
+                />
             </div>
           ))}
         </div>

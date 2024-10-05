@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Img from "../../images/logos_icons/lightning.svg";
 import HeaderComponent from "@/components/HeaderComponent";
 import BlogSkeletonComponent from "@/components/BlogSkeletonComponent";
 import Link from "next/link";
@@ -8,7 +7,7 @@ import Link from "next/link";
 const events = () => {
   return (
     <div>
-      <HeaderComponent></HeaderComponent>
+      <HeaderComponent/>
       <div
         className="w-full p-10"
         style={{
@@ -24,16 +23,16 @@ const events = () => {
 
         <div className="lg:flex gap-20 justify-center my-[4rem]">
             <div className=" max-md:hidden lg:visible">
-            <BlogSkeletonComponent></BlogSkeletonComponent>
+            <BlogSkeletonComponent/>
             </div>
             <div className=" max-md:hidden lg:visible">
-            <BlogSkeletonComponent></BlogSkeletonComponent>
+            <BlogSkeletonComponent/>
             </div>
             <div className=" max-md:hidden lg:visible">
-            <BlogSkeletonComponent></BlogSkeletonComponent>
+            <BlogSkeletonComponent/>
             </div>
             <div className="md:visible">
-            <BlogSkeletonComponent></BlogSkeletonComponent>
+            <BlogSkeletonComponent/>
             </div>
         </div>
 
@@ -47,7 +46,7 @@ const events = () => {
       </div>
       <div className="md:flex justify-center bg-eestec">
         <article className="grid justify-items-center text-center lg:my-6">
-          <Image src={Img} alt="Feature Image" className="my-[1.25rem]"></Image>
+          <Image src={"/images/logos_icons/lightning.svg"} alt="Feature Image" width={40} height={40} className="my-[1.25rem]"/>
         </article>
       </div>
     </div>

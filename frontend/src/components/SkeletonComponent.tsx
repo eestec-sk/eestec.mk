@@ -21,7 +21,7 @@ const SkeletonComponent = ({ img, title, date, info, link }: EventProps) => {
           width={1080}
           height={1080}
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
-        ></Image>
+        />
       </div>
       <div className="text-event">
         <div>
