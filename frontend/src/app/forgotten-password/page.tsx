@@ -9,7 +9,6 @@ const forgot = () => {
       <div
         className="w-full p-10"
         style={{
-          backgroundColor: `#e52a30`,
           backgroundPosition: `center`,
           backgroundSize: `cover`,
           backgroundRepeat: `no-repeat`,
@@ -72,7 +71,7 @@ const forgot = () => {
         </div>
       </div>
 
-      <div className="md:flex justify-center bg-eestec">
+      <div className="md:flex justify-center">
         <article className="grid justify-items-center text-center lg:my-6">
           <Image
             src={"/images/logos_icons/lightning.svg"}

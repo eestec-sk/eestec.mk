@@ -19,7 +19,12 @@ const HeaderComponent = () => {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <a href="/" className="text-white">
-                  <Image src={"/images/logos_icons/Skopje.svg"} alt={""} width={235} height={1}/>
+                  <Image
+                    src={"/images/logos_icons/Skopje.svg"}
+                    alt={""}
+                    width={235}
+                    height={1}
+                  />
                 </a>
               </div>
             </div>

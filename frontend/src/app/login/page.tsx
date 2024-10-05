@@ -9,13 +9,12 @@ const login = () => {
       <div
         className="w-full p-10"
         style={{
-          backgroundColor: `#e52a30`,
           backgroundPosition: `center`,
           backgroundSize: `cover`,
           backgroundRepeat: `no-repeat`,
         }}
       >
-        <h3 className=" font-eestec text-center text-white lg:text-6xl md:text-5xl sm:text-4xl text-3xl uppercase font-black">
+        <h3 className=" font-eestec text-center text-eestec lg:text-6xl md:text-5xl sm:text-4xl text-3xl uppercase font-black">
            Welcome Back!
         </h3>
 
@@ -102,7 +101,7 @@ const login = () => {
         </div>
       </div>
 
-      <div className="md:flex justify-center bg-eestec">
+      <div className="md:flex justify-center">
         <article className="grid justify-items-center text-center lg:my-6">
           <Image src={"/images/logos_icons/lightning.svg"} width={40} height={40} alt="Feature Image" className="mt-[7.8rem]"/>
         </article>
