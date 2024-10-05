@@ -16,7 +16,7 @@ const MemoriesImagesComponent = ({ img, text }: MemoriesProps) => {
       height={500}
       width={500}
       className="mt-8 mb-8 zoom"
-    ></Image>
+      />
   );
 };
 export default MemoriesImagesComponent;

@@ -13,7 +13,7 @@ const SponsorsSupportersComponent = () => {
         text={
           "Lorem ipsum dolor sit amet consectetur. Eu ligula tellus nisi nunc ut rhoncus. "
         }
-      ></SponsorsComponent>
+      />
       <SponsorsComponent
         heading={"Supporters"}
         img={Img}
@@ -22,7 +22,7 @@ const SponsorsSupportersComponent = () => {
         text={
           "Lorem ipsum dolor sit amet consectetur. Eu ligula tellus nisi nunc ut rhoncus. "
         }
-      ></SponsorsComponent>
+      />
     </div>
   );
 };
