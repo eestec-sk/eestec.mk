@@ -2,103 +2,11 @@
 import { useState } from "react";
 import HeaderComponent from "@/components/HeaderComponent";
 import SkeletonComponent from "@/components/SkeletonComponent";
-import Img from "../../images/events-showcase/lht.svg";
-import Img2 from "../../images/events-showcase/ea-robotics.png";
-import Img3 from "../../images/events-showcase/ssa.png";
-import Img4 from "../../images/events-showcase/challenge.png";
-import Img5 from "../../images/events-showcase/calu.png";
-import Img6 from "../../images/events-showcase/b2b.png";
-import Img7 from "../../images/events-showcase/sprint.jpeg";
-import Img8 from "../../images/events-showcase/egw.png";
-import Img9 from "../../images/events-showcase/robomac.png";
-import Img10 from "../../images/events-showcase/lrm.jpg";
-
+import eventsData from "./events.json";
 const Events = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTag, setSelectedTag] = useState("all");
-
-  const eventList = [
-    {
-      img: Img,
-      title: "Learn How To",
-      date: "01.01.1970",
-      info: "Learn How to develop Apps and Improve Your Coding Skills with EESTEC LC Skopje!",
-      link: "https://lht.eestec.mk/",
-      tag: "local",
-    },
-    {
-      img: Img2,
-      title: "EESTEC ACADEMY",
-      date: "01.01.1970",
-      info: "Stay on top of popular technologies with EESTEC ACADEMY!",
-      link: "https://academy.eestec.mk/",
-      tag: "local",
-    },
-    {
-      img: Img3,
-      title: "SOFT SKILLS ACADEMY",
-      date: "01.01.1970",
-      info: "A series of free trainings aimed at improving the soft skills of students",
-      link: "https://www.instagram.com/ssa_skopje/",
-      tag: "international",
-    },
-    {
-      img: Img4,
-      title: "EESTech Challenge",
-      date: "01.01.1970",
-      info: "EESTech Challenge  is the students’ international competition organized by EESTEC",
-      link: "https://www.instagram.com/eestech_challenge_lc_skopje/",
-      tag: "international",
-    },
-    {
-      img: Img5,
-      title: "Code Up, Level Up",
-      date: "01.01.1970",
-      info: "International workshop on various topics related to app development",
-      link: "https://calu.eestec.mk/",
-      tag: "international",
-    },
-    {
-      img: Img6,
-      title: "Back to Basics",
-      date: "01.01.1970",
-      info: "Free lecture series on the basics of structured programming among FCSE students!",
-      link: "https://www.instagram.com/b2b_skopje/",
-      tag: "local",
-    },
-    {
-      img: Img7,
-      title: "IT Sprint",
-      date: "01.01.1970",
-      info: "International event about software development technologies and IT topics related to EESTEC's applications",
-      link: "https://eestec.net/cities/skopje",
-      tag: "international",
-    },
-    {
-      img: Img8,
-      title: "EESTECers Gone Wild",
-      date: "01.01.1970",
-      info: "International summer cultural exchange at various locations in Macedonia",
-      link: "https://eestec.net/events/eestecers-gone-wild-5",
-      tag: "international",
-    },
-    {
-      img: Img9,
-      title: "Robomac",
-      date: "01.01.1970",
-      info: "Competition in the field of robotics promoting robotics and electronics among students in Macedonia and surrounding countries",
-      link: "https://eestec.net/cities/skopje",
-      tag: "local",
-    },
-    {
-      img: Img10,
-      title: "Live Regional Meeting",
-      date: "01.01.1970",
-      info: "Yearly meetup for representatives of the same EESTEC region exchanging experiences and ideas",
-      link: "https://eestec.net/events/regional-meeting-eestecers-on-the-orient-express",
-      tag: "international",
-    },
-  ];
+  const [eventList, setEventList] = useState(eventsData);
 
   const filteredEvents = eventList.filter(
     (event) =>
