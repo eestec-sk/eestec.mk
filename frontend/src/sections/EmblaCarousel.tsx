@@ -3,7 +3,6 @@ import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
-import Line from "../../../frontend/public/images/logos_icons/red_line_full.svg";
 import SubheadingComponent from "@/components/SubheadingComponent";
 
 import partnerData from "@/dataFolder/partner.json";
@@ -16,7 +15,7 @@ export function EmblaCarousel() {
     <>
       <SubheadingComponent
         text={"OUR PARTNERS AND SUPPORTERS"}
-        img={Line}
+        img={"/images/logos_icons/red_line_full.svg"}
       />
       <div className="embla" ref={emblaRef}>
         <div className="embla__container gap-3">
