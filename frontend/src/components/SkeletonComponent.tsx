@@ -3,7 +3,8 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 interface EventProps {
-  img: StaticImageData;
+  // img: StaticImageData;
+  img: string;
   title: string;
   date: string;
   info: string;
@@ -17,8 +18,10 @@ const SkeletonComponent = ({ img, title, date, info, link }: EventProps) => {
         <Image
           src={img}
           alt={"Event"}
+          width={1080}
+          height={1080}
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
-        ></Image>
+        />
       </div>
       <div className="text-event">
         <div>

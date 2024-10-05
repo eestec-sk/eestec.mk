@@ -8,7 +8,6 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 
-import Img from "../images/logos_icons/logo_white.svg";
 import SocialMediaComponent from "./SocialMediaComponent";
 
 const FooterComponent = () => {
@@ -16,16 +15,40 @@ const FooterComponent = () => {
     <div className="md:flex xl:gap-80 gap-20 justify-center bg-eestec p-4">
       <nav className="flex md:justify-between items-center justify-center">
         <div className="grid grid-cols-4 justify-center items-center ">
-
-            <SocialMediaComponent mediaLink={"https://www.instagram.com/eesteclcskopje/"} icon={FaInstagram} text={"Instagram"} size={"4rem"}></SocialMediaComponent>
-            <SocialMediaComponent mediaLink={"https://www.facebook.com/EESTECLCSkopje"} icon={FaSquareFacebook} text={"Facebook"} size={"4rem"}></SocialMediaComponent>
-            <SocialMediaComponent mediaLink={"https://x.com/EESTEC_Skopje"} icon={FaXTwitter} text={"Twitter"} size={"4rem"}></SocialMediaComponent>
-            <SocialMediaComponent mediaLink={"https://discord.gg/UPpGaXzbuH"} icon={FaDiscord} text={"Discord"} size={"4rem"}></SocialMediaComponent>
-            
+          <SocialMediaComponent
+            mediaLink={"https://www.instagram.com/eesteclcskopje/"}
+            icon={FaInstagram}
+            text={"Instagram"}
+            size={"4rem"}
+          />
+          <SocialMediaComponent
+            mediaLink={"https://www.facebook.com/EESTECLCSkopje"}
+            icon={FaSquareFacebook}
+            text={"Facebook"}
+            size={"4rem"}
+          />
+          <SocialMediaComponent
+            mediaLink={"https://x.com/EESTEC_Skopje"}
+            icon={FaXTwitter}
+            text={"Twitter"}
+            size={"4rem"}
+          />
+          <SocialMediaComponent
+            mediaLink={"https://discord.gg/UPpGaXzbuH"}
+            icon={FaDiscord}
+            text={"Discord"}
+            size={"4rem"}
+          />
         </div>
       </nav>
       <article className="grid justify-items-center text-center m-3 my-5">
-        <Image src={Img} alt="Feature Image" className=" m-2"></Image>
+        <Image
+          src={"/images/logos_icons/logo_white.svg"}
+          alt="Feature Image"
+          width={250}
+          height={100}
+          className=" m-2"
+        />
         <div>
           <h6 className="text-center text-white">
             <strong>E</strong>lectrical <strong>E</strong>ngineering{" "}

@@ -2,14 +2,13 @@
 
 import Image from "next/image";
 import Typewriter from 'typewriter-effect'; 
-import HeroImage from "../images/yearbook-photo.jpeg";
 
 const HeroComponent = () => {
   return (
     <div
       className="w-full p-10"
       style={{
-        backgroundImage: `linear-gradient(0deg, #e52a30 0%, rgba(38, 38, 38, 0.1) 70%), url(${HeroImage.src})`,
+        backgroundImage: `linear-gradient(0deg, #e52a30 0%, rgba(38, 38, 38, 0.1) 70%), url(/yearbook-photo.jpeg)`,
         backgroundPosition: `center`,
         backgroundSize: `cover`,
         backgroundRepeat: `no-repeat`,
