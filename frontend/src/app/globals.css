@@ -212,6 +212,16 @@ body {
   padding: 16px 32px;
 }
 
+.link-login {
+  background: #e52a30;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 12px;
+}
+
 @media (min-width: 1024px) {
   .zoom {
     transition: transform 0.3s ease-in-out;
