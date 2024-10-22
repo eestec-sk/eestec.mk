@@ -68,7 +68,7 @@ export default function HeaderComponent() {
                     </button>
                     <Link
                       href="/register"
-                      className="text-eestec hover:bg-eestec hover:text-white rounded-lg p-2"
+                      className="text-eestec hover:bg-eestec hover:text-white rounded-lg p-2 ml-4"
                     >
                       Register
                     </Link>
