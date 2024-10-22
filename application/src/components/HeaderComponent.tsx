@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Img from "../images/logos_icons/Skopje.svg";
 import Link from "next/link";
+import { signIn, signOut } from 'next-auth/react'
 
 const HeaderComponent = () => {
   const [isClick, setisClick] = useState(false);
@@ -53,12 +54,12 @@ const HeaderComponent = () => {
                 >
                   Contact
                 </Link>
-                <Link
-                  href={"/login"}
+                <button
                   className="text-eestec hover:bg-eestec hover:text-white rounded-lg p-2"
+                  onClick={() => signIn()}
                 >
                   Login
-                </Link>
+                </button>
                 <Link
                   href={"/register"}
                   className="text-eestec hover:bg-eestec hover:text-white rounded-lg p-2"

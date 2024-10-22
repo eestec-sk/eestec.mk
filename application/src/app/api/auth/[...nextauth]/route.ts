@@ -1,19 +1,15 @@
-// import { prisma } from '@/lib/prisma'
-// import { compare } from 'bcrypt'
+import { compare } from 'bcrypt'
+import { prisma } from '../../../../../lib/prisma'
 import NextAuth, { type NextAuthOptions } from 'next-auth'
 import CredentialsProvider from 'next-auth/providers/credentials'
+import { User } from '@prisma/client'
 
 export const authOptions: NextAuthOptions = {
   session: {
     strategy: 'jwt'
   },
-  // Modify for our log in pages
   pages: {
-    signIn: '/auth/signin',
-    signOut: '/auth/signout',
-    error: '/auth/error', // Error code passed in query string as ?error=
-    verifyRequest: '/auth/verify-request', // (used for check email message)
-    newUser: '/auth/new-user' // New users will be directed here on first sign in (leave the property out if not of interest)
+    signIn: '/login',
   },
   providers: [
     CredentialsProvider({
@@ -27,65 +23,58 @@ export const authOptions: NextAuthOptions = {
         password: { label: 'Password', type: 'password' }
       },
       async authorize(credentials) {
-        // if (!credentials?.email || !credentials.password) {
-        //   return null
-        // }
+        if (!credentials?.email || !credentials.password) {
+          return null
+        }
 
-        // const user = await prisma.user.findUnique({
-        //   where: {
-        //     email: credentials.email
-        //   }
-        // })
+        const user = await prisma.user.findUnique({
+          where: {
+            Email: credentials.email
+          }
+        })
 
-        // if (!user) {
-        //   return null
-        // }
+        if (!user) {
+          return null
+        }
 
-        // const isPasswordValid = await compare(
-        //   credentials.password,
-        //   user.password
-        // )
+        const isPasswordValid = await compare(
+          credentials.password,
+          user.Password
+        )
 
-        // if (!isPasswordValid) {
-        //   return null
-        // }
+        if (!isPasswordValid) {
+          return null
+        }
 
-        // return {
-        //   id: user.id + '',
-        //   email: user.email,
-        //   name: user.name,
-        //   randomKey: 'Hey cool'
-        // }
-        const user = { id: '1', name: 'Nole', email: 'nole@eestec.mk' }
-        return user
+        return {
+          id: user.Id + '',
+          mail: user.Email,
+          name: `${user.FirstName} ${user.LastName}`,
+        }
       }
     })
   ],
-//   callbacks: {
-//     session: ({ session, token }) => {
-//       console.log('Session Callback', { session, token })
-//       return {
-//         ...session,
-//         user: {
-//           ...session.user,
-//           id: token.id,
-//           randomKey: token.randomKey
-//         }
-//       }
-//     },
-//     jwt: ({ token, user }) => {
-//       console.log('JWT Callback', { token, user })
-//       if (user) {
-//         const u = user as unknown as any
-//         return {
-//           ...token,
-//           id: u.id,
-//           randomKey: u.randomKey
-//         }
-//       }
-//       return token
-//     }
-//   }
+  callbacks: {
+    session: ({ session, token }) => {
+      return {
+        ...session,
+        user: {
+          ...session.user,
+          id: token.id,
+        }
+      }
+    },
+    jwt: ({ token, user }) => {
+      if (user) {
+        const u = user as unknown as User
+        return {
+          ...token,
+          id: u.Id,
+        }
+      }
+      return token
+    }
+  }
 }
 
 const handler = NextAuth(authOptions)

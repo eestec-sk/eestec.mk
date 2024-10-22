@@ -2,8 +2,22 @@
 import Image from "next/image";
 import Img from "../../images/logos_icons/lightning.svg";
 import HeaderComponent from "@/components/HeaderComponent";
+import { getCsrfToken } from "next-auth/react"
+import { useState, useEffect } from 'react';
 
+// TODO: Refactor when changing component to be server side
 const login = () => {
+  const [csrfToken, setCsrfToken] = useState('');
+
+  useEffect(() => {
+    const fetchCsrfToken = async () => {
+      const token = await getCsrfToken();
+      setCsrfToken(token || '');
+    };
+
+    fetchCsrfToken();
+  }, []);
+
   return (
     <div>
       <HeaderComponent></HeaderComponent>
@@ -22,11 +36,12 @@ const login = () => {
 
         <div className=" flex justify-center">
           <div className="my-[3rem] w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 ">
-            <form className="space-y-6" action="#">
+            <form className="space-y-6" action="/api/auth/callback/credentials" method="POST">
               <h5 className="text-xl font-medium text-gray-900 dark:text-white">
                 Sign in to our platform
               </h5>
               <div>
+                <input type="hidden" name="csrfToken" defaultValue={csrfToken} />
                 <label
                   htmlFor="email"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
