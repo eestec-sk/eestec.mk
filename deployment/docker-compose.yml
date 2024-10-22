@@ -1,6 +1,9 @@
 services:
   app:
     image: eesteclcskopje/lcskopje_private:eestecmk
+    environment:
+      - NEXTAUTH_SECRET=${NEXTAUTH_SECRET}
+      - DATABASE_URL=${DATABASE_URL}
     ports:
       - "6969:3000"
   database:

@@ -1,0 +1,82 @@
+[
+  {
+    "img": "/images/events-showcase/lht.jpg",
+    "title": "Learn How To",
+    "date": "01.01.1970",
+    "info": "Learn How to develop Apps and Improve Your Coding Skills with EESTEC LC Skopje!",
+    "link": "https://lht.eestec.mk/",
+    "tag": "local"
+  },
+  {
+    "img": "/images/events-showcase/ea-robotics.png",
+    "title": "EESTEC ACADEMY",
+    "date": "01.01.1970",
+    "info": "Stay on top of popular technologies with EESTEC ACADEMY!",
+    "link": "https://academy.eestec.mk/",
+    "tag": "local"
+  },
+  {
+    "img": "/images/events-showcase/ssa.png",
+    "title": "SOFT SKILLS ACADEMY",
+    "date": "01.01.1970",
+    "info": "A series of free trainings aimed at improving the soft skills of students.",
+    "link": "https://www.instagram.com/ssa_skopje/",
+    "tag": "international"
+  },
+  {
+    "img": "/images/events-showcase/challenge.png",
+    "title": "EESTech Challenge",
+    "date": "01.01.1970",
+    "info": "EESTech Challenge  is the students’ international competition organized by EESTEC.",
+    "link": "https://www.instagram.com/eestech_challenge_lc_skopje/",
+    "tag": "international"
+  },
+  {
+    "img": "/images/events-showcase/calu.png",
+    "title": "Code Up, Level Up",
+    "date": "01.01.1970",
+    "info": "Level Up Your Coding Skills",
+    "link": "https://calu.eestec.mk/",
+    "tag": "international"
+  },
+  {
+    "img": "/images/events-showcase/b2b.png",
+    "title": "Back to Basics",
+    "date": "01.01.1970",
+    "info": "Free lecture series on the basics of structured programming!",
+    "link": "https://www.instagram.com/b2b_skopje/",
+    "tag": "local"
+  },
+  {
+    "img": "/images/events-showcase/sprint.jpeg",
+    "title": "IT Sprint",
+    "date": "01.01.1970",
+    "info": "Free lecture series on the basics of structured programming!",
+    "link": "https://www.instagram.com/b2b_skopje/",
+    "tag": "local"
+  },
+  {
+    "img": "/images/events-showcase/egw.png",
+    "title": "EESTECers Gone Wild",
+    "date": "01.01.1970",
+    "info": "Free lecture series on the basics of structured programming!",
+    "link": "https://www.instagram.com/b2b_skopje/",
+    "tag": "local"
+  },
+  {
+    "img": "/images/events-showcase/robomac.png",
+    "title": "Robomac",
+    "date": "01.01.1970",
+    "info": "Free lecture series on the basics of structured programming!",
+    "link": "https://www.instagram.com/b2b_skopje/",
+    "tag": "local"
+  },
+  {
+    "img": "/images/events-showcase/lrm.jpg",
+    "title": "Live Regional Meeting",
+    "date": "01.01.1970",
+    "info": "Free lecture series on the basics of structured programming!",
+    "link": "https://www.instagram.com/b2b_skopje/",
+    "tag": "local"
+  }
+]
