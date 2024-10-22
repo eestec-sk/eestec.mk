@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import Img from "../images/logos_icons/Skopje.svg";
 import Link from "next/link";
 import { signIn, signOut } from 'next-auth/react'
 
@@ -21,7 +20,12 @@ const HeaderComponent = () => {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <a href="/" className="text-white">
-                  <Image src={Img} alt={""} width={235}></Image>
+                  <Image
+                    src={"/images/logos_icons/Skopje.svg"}
+                    alt={""}
+                    width={235}
+                    height={1}
+                  />
                 </a>
               </div>
             </div>

@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Img from "../../images/logos_icons/lightning.svg";
 import HeaderComponent from "@/components/HeaderComponent";
 import { getCsrfToken } from "next-auth/react"
 import { useState, useEffect } from 'react';
@@ -20,22 +19,32 @@ const login = () => {
 
   return (
     <div>
-      <HeaderComponent></HeaderComponent>
+      <HeaderComponent />
       <div
         className="w-full p-10"
         style={{
-          backgroundColor: `#e52a30`,
           backgroundPosition: `center`,
           backgroundSize: `cover`,
           backgroundRepeat: `no-repeat`,
         }}
       >
-        <h3 className=" font-eestec text-center text-white lg:text-6xl md:text-5xl sm:text-4xl text-3xl uppercase font-black">
-           Welcome Back!
+        <h3 className=" font-eestec text-center text-eestec lg:text-6xl md:text-5xl sm:text-4xl text-3xl uppercase font-black">
+          Welcome Back!
         </h3>
 
         <div className=" flex justify-center">
-          <div className="my-[3rem] w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 ">
+          <div
+            className="my-[3rem] w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:border-gray-700"
+            style={{
+              boxShadow: `0px 216px 60px 0px rgba(0, 0, 0, 0%),
+              0px 138px 55px 0px rgba(0, 0, 0, 1%),
+              0px 78px 47px 0px rgba(0, 0, 0, 5%),
+              0px 35px 35px 0px rgba(0, 0, 0, 9%),
+              0px 9px 19px 0px rgba(0, 0, 0, 10%)`,
+              borderRadius: `20px`,
+              border: "1px solid #ccc",
+            }}
+          >
             <form className="space-y-6" action="/api/auth/callback/credentials" method="POST">
               <h5 className="text-xl font-medium text-gray-900 dark:text-white">
                 Sign in to our platform
@@ -44,7 +53,7 @@ const login = () => {
                 <input type="hidden" name="csrfToken" defaultValue={csrfToken} />
                 <label
                   htmlFor="email"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  className="block mb-2 text-sm font-medium text-black"
                 >
                   Your email
                 </label>
@@ -52,7 +61,7 @@ const login = () => {
                   type="email"
                   name="email"
                   id="email"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                  className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block w-full p-2.5 dark:bg-gray-150 dark:border-gray-400 dark:placeholder-gray-400 dark:text-white"
                   placeholder="name@eestec.com"
                   required
                 />
@@ -60,7 +69,7 @@ const login = () => {
               <div>
                 <label
                   htmlFor="password"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  className="block mb-2 text-sm font-medium text-black"
                 >
                   Your password
                 </label>
@@ -69,7 +78,7 @@ const login = () => {
                   name="password"
                   id="password"
                   placeholder="••••••••"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-150 dark:border-gray-400 dark:placeholder-gray-400 dark:text-white"
                   required
                 />
               </div>
@@ -86,29 +95,29 @@ const login = () => {
                   </div>
                   <label
                     htmlFor="remember"
-                    className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    className="ms-2 text-sm font-medium text-black"
                   >
                     Remember me
                   </label>
                 </div>
                 <a
                   href="/forgotten-password"
-                  className="ms-auto text-sm text-blue-700 hover:underline dark:text-blue-500"
+                  className="ms-auto text-sm text-eestec hover:underline dark:text-eestec"
                 >
                   Forgot Password?
                 </a>
               </div>
               <button
                 type="submit"
-                className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                className="link-login w-full text-white font-medium rounded-lg text-sm text-center"
               >
-                Login to your account
+                Login
               </button>
-              <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
+              <div className="text-sm font-medium text-black">
                 Not registered?{" "}
                 <a
                   href="/register"
-                  className="text-blue-700 hover:underline dark:text-blue-500"
+                  className="text-eestec hover:underline dark:text-eestec"
                 >
                   Create account
                 </a>
@@ -118,9 +127,15 @@ const login = () => {
         </div>
       </div>
 
-      <div className="md:flex justify-center bg-eestec">
+      <div className="md:flex justify-center">
         <article className="grid justify-items-center text-center lg:my-6">
-          <Image src={Img} alt="Feature Image" className="mt-[7.8rem]"></Image>
+          <Image
+            src={"/images/logos_icons/lightning.svg"}
+            width={40}
+            height={40}
+            alt="Feature Image"
+            className="mt-[7.8rem]"
+          />
         </article>
       </div>
     </div>

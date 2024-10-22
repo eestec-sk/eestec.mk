@@ -193,13 +193,33 @@ body {
 }
 
 .link-event {
-  padding: 8px 16px;
   background: #e52a30;
   color: #fff;
   border: none;
   border-radius: 12px;
   cursor: pointer;
   font-size: 16px;
+  padding: 8px 20px 8px 20px;
+}
+
+.link-blog {
+  background: #e52a30;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 16px 32px;
+}
+
+.link-login {
+  background: #e52a30;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 12px;
 }
 
 @media (min-width: 1024px) {
