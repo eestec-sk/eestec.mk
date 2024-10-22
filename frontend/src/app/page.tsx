@@ -11,7 +11,6 @@ import { EmblaCarousel } from "@/sections/EmblaCarousel";
 export default function Home() {
   return (
     <div>
-      <HeaderComponent />
       <HeroComponent />
       <MissionVisionComponent />
       <KeyFeaturesComponent />

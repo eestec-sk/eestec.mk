@@ -10,5 +10,7 @@ export async function GET(request: Request) {
             JSON.stringify({ error: "unauthorized" }), { status: 401 });
     }
 
+    console.log(session);
+
     return NextResponse.json({ authenticated: !!session })
 }

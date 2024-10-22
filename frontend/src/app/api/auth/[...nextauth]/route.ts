@@ -48,7 +48,7 @@ export const authOptions: NextAuthOptions = {
 
         return {
           id: user.Id + '',
-          mail: user.Email,
+          email: user.Email,
           name: `${user.FirstName} ${user.LastName}`,
         }
       }
@@ -56,6 +56,7 @@ export const authOptions: NextAuthOptions = {
   ],
   callbacks: {
     session: ({ session, token }) => {
+      // TODO: Add Picture?
       return {
         ...session,
         user: {

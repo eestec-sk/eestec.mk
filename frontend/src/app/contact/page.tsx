@@ -5,7 +5,6 @@ import HeaderComponent from "@/components/HeaderComponent";
 const events = () => {
   return (
     <div>
-      <HeaderComponent />
       <div
         className="w-full p-10"
         style={{

@@ -7,7 +7,6 @@ import Link from "next/link";
 const events = () => {
   return (
     <div>
-      <HeaderComponent />
       <div
         className="w-full p-10"
         style={{

@@ -4,7 +4,6 @@ import HeaderComponent from "@/components/HeaderComponent";
 const register = () => {
   return (
     <div>
-      <HeaderComponent/>
       <div
         className="w-full p-10"
         style={{
@@ -44,7 +43,7 @@ const register = () => {
                   type="email"
                   name="email"
                   id="email"
-                  className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block w-full p-2.5 dark:bg-gray-150 dark:border-gray-400 dark:placeholder-gray-400 dark:text-white"
+                  className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block w-full p-2.5 dark:bg-gray-150 dark:border-gray-400 dark:placeholder-gray-400"
                   placeholder="name@eestec.com"
                   required
                 />
@@ -61,7 +60,7 @@ const register = () => {
                   name="password"
                   id="password"
                   placeholder="••••••••"
-                  className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block w-full p-2.5 dark:bg-gray-150 dark:border-gray-400 dark:placeholder-gray-400 dark:text-white"
+                  className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block w-full p-2.5 dark:bg-gray-150 dark:border-gray-400 dark:placeholder-gray-400"
                   required
                 />
               </div>
@@ -77,7 +76,7 @@ const register = () => {
                   name="password"
                   id="password"
                   placeholder="••••••••"
-                 className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block w-full p-2.5 dark:bg-gray-150 dark:border-gray-400 dark:placeholder-gray-400 dark:text-white"
+                 className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block w-full p-2.5 dark:bg-gray-150 dark:border-gray-400 dark:placeholder-gray-400"
                   required
                 />
               </div>

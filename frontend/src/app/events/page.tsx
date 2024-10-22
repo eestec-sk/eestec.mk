@@ -16,7 +16,6 @@ const Events = () => {
 
   return (
     <div>
-      <HeaderComponent/>
       <div
         className="w-full p-10"
         style={{
