@@ -2,7 +2,6 @@ import { compare } from 'bcrypt'
 import { prisma } from '../../../../../lib/prisma'
 import NextAuth, { type NextAuthOptions } from 'next-auth'
 import CredentialsProvider from 'next-auth/providers/credentials'
-import { User } from '@prisma/client'
 
 export const authOptions: NextAuthOptions = {
   session: {
@@ -67,10 +66,10 @@ export const authOptions: NextAuthOptions = {
     },
     jwt: ({ token, user }) => {
       if (user) {
-        const u = user as unknown as User
+        const u = user as unknown as any
         return {
           ...token,
-          id: u.Id,
+          id: u.id,
         }
       }
       return token
