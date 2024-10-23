@@ -57,6 +57,12 @@ export default function HeaderComponent() {
                       >
                         {session.user?.name}
                       </Link>
+                    <button
+                      className="text-eestec hover:bg-eestec hover:text-white rounded-lg p-2"
+                      onClick={() => signOut()}
+                    >
+                      Sign out
+                    </button>
                   </div>
                 ) : (
                   <div className="border-l-2 pl-4">
