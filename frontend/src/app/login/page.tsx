@@ -1,12 +1,15 @@
 "use client";
 import Image from "next/image";
-import HeaderComponent from "@/components/HeaderComponent";
-import { getCsrfToken } from "next-auth/react"
+import { getCsrfToken, signIn } from "next-auth/react";
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation'
 
-// TODO: Refactor when changing component to be server side
 const Login = () => {
+  const router = useRouter();
   const [csrfToken, setCsrfToken] = useState('');
+  const [errorMessage, setErrorMessage] = useState(''); // State for error messages
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   useEffect(() => {
     const fetchCsrfToken = async () => {
@@ -16,6 +19,22 @@ const Login = () => {
 
     fetchCsrfToken();
   }, []);
+
+  const handleSubmit = async (e : React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const result = await signIn('credentials', {
+      redirect: false,
+      email,
+      password,
+    });
+
+    if (result?.error) {
+      setErrorMessage(result.error);
+    } else {
+      router.push('/');
+    }
+  };
 
   return (
     <div>
@@ -27,11 +46,11 @@ const Login = () => {
           backgroundRepeat: `no-repeat`,
         }}
       >
-        <h3 className=" font-eestec text-center text-eestec lg:text-6xl md:text-5xl sm:text-4xl text-3xl uppercase font-black">
+        <h3 className="font-eestec text-center text-eestec lg:text-6xl md:text-5xl sm:text-4xl text-3xl uppercase font-black">
           Welcome Back!
         </h3>
 
-        <div className=" flex justify-center">
+        <div className="flex justify-center">
           <div
             className="my-[3rem] w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:border-gray-700"
             style={{
@@ -44,7 +63,10 @@ const Login = () => {
               border: "1px solid #ccc",
             }}
           >
-            <form className="space-y-6" action="/api/auth/callback/credentials" method="POST">
+            {errorMessage && (
+              <h5 className="text-blue-500 mb-5">{errorMessage}</h5>
+            )}
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <h5 className="text-xl font-medium text-gray-900 dark:text-eestec">
                 Sign in to our platform
               </h5>
@@ -60,7 +82,9 @@ const Login = () => {
                   type="email"
                   name="email"
                   id="email"
-                  className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block w-full p-2.5 dark:bg-gray-150 dark:border-gray-400 dark:placeholder-gray-400"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)} // Capture email
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block w-full p-2.5 dark:bg-gray-150 dark:border-gray-400 dark:placeholder-gray-400"
                   placeholder="name@eestec.com"
                   required
                 />
@@ -76,6 +100,8 @@ const Login = () => {
                   type="password"
                   name="password"
                   id="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)} // Capture password
                   placeholder="••••••••"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-150 dark:border-gray-400 dark:placeholder-gray-400"
                   required
@@ -140,4 +166,5 @@ const Login = () => {
     </div>
   );
 };
+
 export default Login;
