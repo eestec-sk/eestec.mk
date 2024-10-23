@@ -5,7 +5,7 @@ import { getCsrfToken } from "next-auth/react"
 import { useState, useEffect } from 'react';
 
 // TODO: Refactor when changing component to be server side
-const login = () => {
+const Login = () => {
   const [csrfToken, setCsrfToken] = useState('');
 
   useEffect(() => {
@@ -140,4 +140,4 @@ const login = () => {
     </div>
   );
 };
-export default login;
+export default Login;

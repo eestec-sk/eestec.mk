@@ -3,7 +3,7 @@ import { hash } from 'bcrypt'
 
 const prisma = new PrismaClient()
 
-// Use this to seed the database with initial data
+// Use this to seed the database with initial data (use for local dev env)
 async function main() { 
   const password = await hash('test', 12)
   const user = await prisma.user.upsert({
