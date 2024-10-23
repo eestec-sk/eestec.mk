@@ -1,14 +1,22 @@
 services:
   app:
-    image: eesteclcskopje/lcskopje_private:eestecmk
+    image: eestecmk
     environment:
       - NEXTAUTH_SECRET=${NEXTAUTH_SECRET}
       - DATABASE_URL=${DATABASE_URL}
     ports:
       - "6969:3000"
-  database:
+    depends_on:
+      - mariadb
+
+  mariadb:
     image: mariadb
     ports:
       - "3306:3306"
     environment:
-      - MARIADB_ROOT_PASSWORD={MARIADB_ROOT_PASSWORD}
+      - MARIADB_ROOT_PASSWORD=${MARIADB_ROOT_PASSWORD}
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+volumes:
+  mariadb_data: {}
