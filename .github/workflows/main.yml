@@ -22,8 +22,8 @@ jobs:
       - name: Build and push frontend NextJS Image
         uses: docker/build-push-action@v2
         with:
-          context: ./frontend
-          file: ./frontend/Dockerfile
+          context: ./application
+          file: ./application/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/lcskopje_private:eestecmk
 
