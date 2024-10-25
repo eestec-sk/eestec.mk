@@ -37,6 +37,6 @@ jobs:
             touch pedzo
             cd eestecmk
             docker-compose pull
-            docker-compose up -d
+            docker-compose -f docker-compose-new.yml up -d
             exit
           EOF
