@@ -102,7 +102,7 @@ export default function Register() {
     if (Object.keys(errors).length === 0) {
       // Make a POST request to API
       try {
-        const response = await fetch('/api/auth/registser', {
+        const response = await fetch('/api/auth/register', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
