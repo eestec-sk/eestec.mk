@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import MemoriesImagesComponent from "@/components/MemoriesImagesComponent";
 import SubheadingComponent from "@/components/SubheadingComponent";
 

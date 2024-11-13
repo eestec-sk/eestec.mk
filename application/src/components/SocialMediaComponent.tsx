@@ -1,8 +1,4 @@
-"use client"
-
-import Image from "next/image";
 import Link from "next/link";
-import IconComponent from "./IconComponent";
 import { IconType } from "react-icons";
 
 interface JoinUsProps {
