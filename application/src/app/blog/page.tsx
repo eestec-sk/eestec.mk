@@ -1,6 +1,4 @@
-"use client";
 import Image from "next/image";
-import HeaderComponent from "@/components/HeaderComponent";
 import BlogSkeletonComponent from "@/components/BlogSkeletonComponent";
 import Link from "next/link";
 
