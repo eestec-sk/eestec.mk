@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import JoinUsComponent from "../components/JoinUsComponent";
 
 import SubheadingComponent from "@/components/SubheadingComponent";
