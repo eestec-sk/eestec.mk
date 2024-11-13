@@ -141,8 +141,13 @@ export default function HeaderComponent() {
                 Contact
               </Link>
 
-              {session ? ( // Check if session exists for mobile view as well
-                <span className="text-eestec block">LOGGED</span>
+              {session ? (
+                <button
+                  className="text-eestec hover:bg-eestec hover:text-white rounded-lg p-2"
+                  onClick={() => signOut()}
+                >
+                  Sign out
+                </button>
               ) : (
                 <>
                   <Link
