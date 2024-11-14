@@ -22,14 +22,8 @@ const HeroComponent = () => {
         <Typewriter 
         onInit={(typewriter) => { 
           typewriter.typeString('Be an EESTECer!') 
-            .callFunction(() => { 
-              console.log('String typed out!'); 
-            }) 
             .pauseFor(2500) 
             .deleteAll() 
-            .callFunction(() => { 
-              console.log('All strings were deleted'); 
-            }) 
             .start(); 
         }}
         options={{ loop: true }} 

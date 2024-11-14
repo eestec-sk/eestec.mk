@@ -5,46 +5,36 @@ const BoardCompomemnt = () => {
   return (
     <div className="my-5">
       <SubheadingComponent
-        text={"BOARD MEMBERS 2023/24"}
+        text={"BOARD MEMBERS 2024/25"}
         img={"/images/logos_icons/red_line_full.svg"}
       />
 
       <div className="lg:flex gap-20 justify-center">
         <MembersComponent
-          img={"/images/board-members/vasilaki.jpg"}
-          heading={"Vasilaki Tocili"}
+          img={"/images/board-members/teovel.jpg"}
+          heading={"Teodor Krstevski"}
           subheading={"Chairperson"}
         />
         <MembersComponent
-          img={"/images/board-members/matej.jpg"}
-          heading={"Matej Filipovski"}
+          img={"/images/board-members/angela.jpg"}
+          heading={"Angela Milenkoska"}
           subheading={"Contact Person"}
         />
         <MembersComponent
-          img={"/images/board-members/martina.jpg"}
-          heading={"Martina Klimoska"}
-          subheading={"Treasurer"}
-        />
-        <MembersComponent
-          img={"/images/board-members/marina.jpg"}
-          heading={"Marina Klimoska"}
+          img={"/images/board-members/bojan.jpg"}
+          heading={"Bojan Naumovski"}
           subheading={"PR Coordinator"}
         />
       </div>
       <div className="lg:flex gap-20 justify-center">
         <MembersComponent
-          img={"/images/board-members/ivana.jpg"}
-          heading={"Ivana Koceva"}
-          subheading={"IT Coordinator"}
-        />
-        <MembersComponent
-          img={"/images/board-members/toni.jpg"}
-          heading={"Toni Hristovski"}
+          img={"/images/board-members/jovan.jpg"}
+          heading={"Jovan Aleksandroski"}
           subheading={"HR Coordinator"}
         />
         <MembersComponent
-          img={"/images/board-members/kristina.jpg"}
-          heading={"Kristina Srbinoska"}
+          img={"/images/board-members/paulina.jpg"}
+          heading={"Paulina Kiprevska"}
           subheading={"FR Coordinator"}
         />
       </div>

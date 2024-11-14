@@ -23,7 +23,7 @@ export default function HeaderComponent() {
                 <Link href="/" className="text-white">
                   <Image
                     src={"/images/logos_icons/Skopje.svg"}
-                    alt=""
+                    alt="Skopje Logo"
                     width={235}
                     height={1}
                   />
